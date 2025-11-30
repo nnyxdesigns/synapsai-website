@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "site": "synpasaico",
+    "public": ".",
+
+     // Drops `.html` from uploaded URLs
+    "cleanUrls": true,
+
+    // Removes trailing slashes from URLs
+    "trailingSlash": false,
+
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
