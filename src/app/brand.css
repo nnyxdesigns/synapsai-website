@@ -1,0 +1,74 @@
+/* Owner-approved SynapsAi brand and real product media. */
+.product-screen {
+  margin: 0;
+  min-width: 0;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: radial-gradient(ellipse at 50% 60%, #14251e 0%, #0c1010 65%);
+}
+.product-screen.prof-visual {
+  padding: 0;
+  background: radial-gradient(ellipse at 50% 60%, #20121d 0%, #0c1010 65%);
+  border-color: var(--line);
+}
+.product-screen-label {
+  padding: 20px 24px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+.product-screen-media {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  margin: 8px 20px;
+}
+.product-screen-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product-screen figcaption {
+  padding: 12px 24px 18px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.product-screen-scene,
+.product-screen-report {
+  aspect-ratio: auto;
+  background: #0c1010;
+}
+.product-screen-scene .product-screen-media,
+.product-screen-report .product-screen-media {
+  aspect-ratio: 4 / 3;
+  margin: 0;
+}
+.product-detail-capture {
+  max-width: 1000px;
+}
+.footer-socials {
+  gap: 12px;
+}
+.footer-socials a {
+  width: 40px;
+  min-height: 40px;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.footer-socials a:hover {
+  background: #14251e;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.footer-socials a svg {
+  width: 18px;
+  height: 18px;
+}

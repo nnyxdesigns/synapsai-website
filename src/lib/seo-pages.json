@@ -1,0 +1,135 @@
+{
+  "/company/careers": {
+    "title": "Careers at SynapsAi — Build Useful AI and Software",
+    "description": "Explore careers at SynapsAi: meet the cofounders, discover our AI and software products, and start a conversation about opportunities with the team.",
+    "headline": "Build something\nthat matters.",
+    "image": "careers",
+    "intent": "SynapsAi careers and team opportunities"
+  },
+  "/": {
+    "title": "SynapsAi — AI Products and Custom Software",
+    "description": "SynapsAi builds AI products, custom software and connected digital experiences in Cameroon for organizations in Africa and beyond.",
+    "headline": "Intelligent technology.\nReal-world impact.",
+    "image": "home",
+    "intent": "SynapsAi company discovery"
+  },
+  "/solutions": {
+    "title": "AI and Software Development Solutions",
+    "description": "Explore SynapsAi’s AI automation, custom software, web and mobile development, and digital transformation services for organizations.",
+    "headline": "Technology built\naround your work.",
+    "image": "solutions",
+    "intent": "AI and software development services"
+  },
+  "/solutions/ai-automation": {
+    "title": "AI and Workflow Automation",
+    "description": "Connect information, reduce repetitive work and build useful AI-enabled workflows with SynapsAi’s approach to business automation.",
+    "headline": "AI that supports\nthe work that matters.",
+    "image": "ai-automation",
+    "intent": "AI workflow automation"
+  },
+  "/solutions/custom-software": {
+    "title": "Custom Software for Business Operations",
+    "description": "Build internal tools, operational platforms and dashboards around your organization’s users, processes and information with SynapsAi.",
+    "headline": "Your operations.\nYour software.",
+    "image": "custom-software",
+    "intent": "custom business software"
+  },
+  "/solutions/web-mobile-development": {
+    "title": "Web and Mobile Application Development",
+    "description": "SynapsAi designs and builds web and mobile products that connect organizations with users, from product needs to practical digital experiences.",
+    "headline": "Digital products.\nBuilt for real use.",
+    "image": "web-mobile",
+    "intent": "web and mobile application development"
+  },
+  "/solutions/digital-transformation": {
+    "title": "Digital Transformation for Organizations",
+    "description": "Map operational needs, connect tools and improve workflows with SynapsAi’s practical approach to digital transformation for organizations.",
+    "headline": "Connect people,\nprocesses and tools.",
+    "image": "transformation",
+    "intent": "organizational digital transformation"
+  },
+  "/products": {
+    "title": "Products Built by SynapsAi",
+    "description": "Discover ImaginAi for learners and ImaginAi Prof for instructors: two distinct products built by SynapsAi around connected education workflows.",
+    "headline": "Two products.\nOne learning ecosystem.",
+    "image": "products",
+    "intent": "SynapsAi products"
+  },
+  "/products/imaginai": {
+    "title": "ImaginAi — AI Learning App for Students",
+    "description": "Explore ImaginAi, the mobile learning application built by SynapsAi for secondary and higher-education learners, with study tools, practice and progress.",
+    "headline": "ImaginAi.\nLearning on mobile.",
+    "image": "imaginai",
+    "intent": "ImaginAi learner mobile application"
+  },
+  "/products/imaginai-prof": {
+    "title": "ImaginAi Prof — AI Tools for Teachers",
+    "description": "ImaginAi Prof is SynapsAi’s instructor web platform for organizing classes, learning resources, assignments and learner follow-up.",
+    "headline": "ImaginAi Prof.\nA clearer view of learning.",
+    "image": "imaginai-prof",
+    "intent": "ImaginAi Prof instructor web platform"
+  },
+  "/work": {
+    "title": "Our Work — Products and Software by SynapsAi",
+    "description": "Explore SynapsAi’s product and engineering work through the ImaginAi ecosystem, connecting learner mobile experiences and instructor web workflows.",
+    "headline": "Ideas made real.\nProducts in people’s hands.",
+    "image": "work",
+    "intent": "SynapsAi project portfolio"
+  },
+  "/work/imaginai": {
+    "title": "ImaginAi Ecosystem — Product and Engineering Case Study",
+    "description": "How SynapsAi approaches product design and engineering for ImaginAi and ImaginAi Prof, serving learners, instructors and educational structures.",
+    "headline": "Inside the\nImaginAi ecosystem.",
+    "image": "work-imaginai",
+    "intent": "ImaginAi ecosystem design and engineering case study"
+  },
+  "/company": {
+    "title": "Company — Meet SynapsAi",
+    "description": "Meet SynapsAi, the technology company behind ImaginAi, and explore our story, team, solutions and documented milestones.",
+    "headline": "Meet SynapsAi.\nBuilt with purpose.",
+    "image": "company",
+    "intent": "SynapsAi company overview"
+  },
+  "/company/about": {
+    "title": "Our Story and Mission",
+    "description": "Learn why SynapsAi builds intelligent technology around real needs, with a focus on accessible, useful digital products and connected workflows.",
+    "headline": "Technology grounded\nin real needs.",
+    "image": "about",
+    "intent": "SynapsAi story and mission"
+  },
+  "/company/team": {
+    "title": "The SynapsAi Team",
+    "description": "Meet SynapsAi’s cofounders: Frank Arnaud Yap, Youssouf Nchetkou Ndam and Steve Mekam Kontche, working across technology, business and product delivery.",
+    "headline": "The people\nbehind the work.",
+    "image": "team",
+    "intent": "SynapsAi founders and team"
+  },
+  "/company/impact": {
+    "title": "Impact, Recognition and Milestones",
+    "description": "Explore documented SynapsAi milestones, ImaginAi’s reported reach, PROMEX recognition and participation in technology and education initiatives.",
+    "headline": "Progress,\ngrounded in evidence.",
+    "image": "impact",
+    "intent": "SynapsAi impact and recognition"
+  },
+  "/insights": {
+    "title": "Insights on AI, Product and Education",
+    "description": "Read SynapsAi’s perspectives on AI in Africa, product engineering and education, alongside interviews, demonstrations and company videos.",
+    "headline": "Ideas for technology\nthat works in the real world.",
+    "image": "insights",
+    "intent": "SynapsAi articles and press"
+  },
+  "/faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers about SynapsAi’s services, ImaginAi products, project collaboration and the next steps for discussing your organization’s needs.",
+    "headline": "Questions,\nanswered clearly.",
+    "image": "faq",
+    "intent": "SynapsAi services and collaboration questions"
+  },
+  "/contact": {
+    "title": "Contact SynapsAi — Discuss Your Project",
+    "description": "Talk to SynapsAi about AI automation, custom software, web and mobile products or an education technology collaboration.",
+    "headline": "Let’s build\nsomething useful.",
+    "image": "contact",
+    "intent": "contact SynapsAi"
+  }
+}

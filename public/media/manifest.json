@@ -1,0 +1,519 @@
+{
+  "assets": [
+    {
+      "file": "brand/synapsai-original.svg",
+      "source": "https://synapsai.co/SynapsAi_files/67d9c7d789934d35146142d8_logo%20final%20SynapsAi-all%20white%201%201.svg",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-brand-asset",
+      "status": "review",
+      "use": "Corporate wordmark"
+    },
+    {
+      "file": "products/imaginai-mobile.png",
+      "source": "https://synapsai.co/SynapsAi_files/692c5316e3769a41c09edba4_iPhone%2015%20Pro.png",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-product-composition",
+      "status": "review",
+      "use": "Real ImaginAi mobile screens, not a generated UI"
+    },
+    {
+      "file": "fonts/manrope-regular.ttf",
+      "source": "https://fonts.google.com/specimen/Manrope",
+      "reviewedAt": "2026-09-16",
+      "license": "SIL Open Font License 1.1; fonts/OFL.txt",
+      "kind": "font",
+      "status": "review"
+    },
+    {
+      "file": "fonts/manrope-bold.ttf",
+      "source": "https://fonts.google.com/specimen/Manrope",
+      "reviewedAt": "2026-09-16",
+      "license": "SIL Open Font License 1.1; fonts/OFL.txt",
+      "kind": "font",
+      "status": "review"
+    },
+    {
+      "status": "review",
+      "source": "https://synapsai.co/SynapsAi_files/692c39d498f3b9153394f681_Yap_background__63733.png",
+      "reviewedAt": "2026-09-16",
+      "file": "team/frank-arnaud-yap.png",
+      "kind": "official-team-portrait"
+    },
+    {
+      "status": "review",
+      "source": "https://synapsai.co/SynapsAi_files/692c39d485c635e0ccc7ee17_freepik__background__60337-1.png",
+      "reviewedAt": "2026-09-16",
+      "file": "team/youssouf-nchetkou-ndam.png",
+      "kind": "official-team-portrait"
+    },
+    {
+      "status": "review",
+      "source": "https://synapsai.co/SynapsAi_files/692c39d4d58638275b4788cf_mekam-pic.png",
+      "reviewedAt": "2026-09-16",
+      "file": "team/steve-mekam-kontche.png",
+      "kind": "official-team-portrait"
+    },
+    {
+      "source": "https://github.com/rsms/inter",
+      "kind": "font",
+      "reviewedAt": "2026-09-16",
+      "license": "SIL Open Font License 1.1; fonts/INTER-LICENSE.txt",
+      "status": "review",
+      "file": "fonts/inter-variable.woff2"
+    },
+    {
+      "file": "insights/context.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/context-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/context-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/learning.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/learning-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/learning-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/connectivity.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/connectivity-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/connectivity-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/system.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/system-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/system-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/classroom.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/classroom-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/classroom-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-16",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights V1; conceptual illustration, no measured data or product UI"
+    },
+    {
+      "file": "insights/youssouf-nchetkou-ndam-avatar.webp",
+      "source": "Derivative of approved team/youssouf-nchetkou-ndam.png; resized only",
+      "reviewedAt": "2026-09-16",
+      "kind": "optimized-official-portrait",
+      "status": "review",
+      "use": "Insights author avatar"
+    },
+    {
+      "file": "insights/frank-arnaud-yap-avatar.webp",
+      "source": "Derivative of approved team/frank-arnaud-yap.png; resized only",
+      "reviewedAt": "2026-09-16",
+      "kind": "optimized-official-portrait",
+      "status": "review",
+      "use": "Insights author avatar"
+    },
+    {
+      "file": "products/imaginai-mobile-hand.webp",
+      "source": "https://imaginai.io/assets/img/hero-phone.png",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-product-composition",
+      "status": "owner-approved",
+      "use": "Matches the product screenshots supplied by the owner; optimized without altering the interface."
+    },
+    {
+      "file": "products/imaginai-prof-devices.webp",
+      "source": "https://imaginai.io/assets/img/hero-dashboard.png",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-product-composition",
+      "status": "owner-approved",
+      "use": "Matches the product screenshots supplied by the owner; optimized without altering the interface."
+    },
+    {
+      "file": "products/imaginai-mobile-scene.webp",
+      "source": "https://imaginai.io/assets/img/students-feature.png",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-product-composition",
+      "status": "owner-approved",
+      "use": "Matches the product screenshots supplied by the owner; optimized without altering the interface."
+    },
+    {
+      "file": "products/imaginai-prof-report.webp",
+      "source": "https://imaginai.io/assets/img/teachers-feature.png",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-product-composition",
+      "status": "owner-approved",
+      "use": "Matches the product screenshots supplied by the owner; optimized without altering the interface."
+    },
+    {
+      "file": "fonts/archivo-variable.ttf",
+      "source": "https://cdn.prod.website-files.com/67d9c14facbde8fddfa3c552/68026197b8398a9703703fe8_Archivo-VariableFont_wdth%2Cwght.ttf",
+      "reviewedAt": "2026-09-16",
+      "kind": "font",
+      "status": "owner-approved",
+      "license": "SIL Open Font License 1.1; fonts/Archivo-OFL.txt"
+    },
+    {
+      "file": "press/Ms-mvda5R0I.webp",
+      "source": "https://i.ytimg.com/vi/Ms-mvda5R0I/hqdefault.jpg",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-video-thumbnail",
+      "status": "owner-approved",
+      "use": "YouTube video supplied by owner; local WebP thumbnail for Press."
+    },
+    {
+      "file": "press/LAsKP0t-Tlg.webp",
+      "source": "https://i.ytimg.com/vi/LAsKP0t-Tlg/hqdefault.jpg",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-video-thumbnail",
+      "status": "owner-approved",
+      "use": "YouTube video supplied by owner; local WebP thumbnail for Press."
+    },
+    {
+      "file": "press/uRv6qxSw1sU.webp",
+      "source": "https://i.ytimg.com/vi/uRv6qxSw1sU/hqdefault.jpg",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-video-thumbnail",
+      "status": "owner-approved",
+      "use": "YouTube video supplied by owner; local WebP thumbnail for Press."
+    },
+    {
+      "file": "press/uQswJbqJOpE.webp",
+      "source": "https://i.ytimg.com/vi/uQswJbqJOpE/hqdefault.jpg",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-video-thumbnail",
+      "status": "owner-approved",
+      "use": "YouTube video supplied by owner; local WebP thumbnail for Press."
+    },
+    {
+      "file": "press/z1hgm1NO6ag.webp",
+      "source": "https://i.ytimg.com/vi/z1hgm1NO6ag/hqdefault.jpg",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-video-thumbnail",
+      "status": "owner-approved",
+      "use": "YouTube video supplied by owner; local WebP thumbnail for Press."
+    },
+    {
+      "file": "press/iQQpq7e9w2w.webp",
+      "source": "https://i.ytimg.com/vi/iQQpq7e9w2w/hqdefault.jpg",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-video-thumbnail",
+      "status": "owner-approved",
+      "use": "YouTube video supplied by owner; local WebP thumbnail for Press."
+    },
+    {
+      "file": "press/SD6g7gPCCfM.webp",
+      "source": "https://i.ytimg.com/vi/SD6g7gPCCfM/hqdefault.jpg",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-video-thumbnail",
+      "status": "owner-approved",
+      "use": "YouTube video supplied by owner; local WebP thumbnail for Press."
+    },
+    {
+      "file": "press/NcV3_oIXTns.webp",
+      "source": "https://i.ytimg.com/vi/NcV3_oIXTns/hqdefault.jpg",
+      "reviewedAt": "2026-09-16",
+      "kind": "official-video-thumbnail",
+      "status": "owner-approved",
+      "use": "YouTube video supplied by owner; local WebP thumbnail for Press."
+    },
+    {
+      "file": "brand/synapsai-logo.svg",
+      "source": "Logo SynapsAi vert + blanc.svg",
+      "kind": "owner-supplied-brand",
+      "status": "owner-approved",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "brand/synapsai-symbol.svg",
+      "source": "Icon only SynapsAi Vector.svg",
+      "kind": "owner-supplied-brand",
+      "status": "owner-approved",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "brand/favicon-32.png",
+      "source": "SynapsAi icon 32x32 px.png",
+      "kind": "owner-supplied-brand",
+      "status": "owner-approved",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/about.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/ai-automation.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/article-classroom-og.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/article-connectivity-og.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/article-context-og.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/article-learning-og.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/article-system-og.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/company.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/contact.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/custom-software.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/default.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/faq.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/home.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/imaginai-prof.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/imaginai.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/impact.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/insights.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/products.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/solutions.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/team.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/transformation.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/web-mobile.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/work-imaginai.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "og/work.png",
+      "source": "scripts/generate-seo-media.mjs",
+      "kind": "original-branded-social-card",
+      "status": "review",
+      "reviewedAt": "2026-09-16"
+    },
+    {
+      "file": "brand/icon-180.png",
+      "source": "Icon only SynapsAi Vector.svg",
+      "kind": "brand-icon-derivative",
+      "status": "owner-approved"
+    },
+    {
+      "file": "brand/icon-192.png",
+      "source": "Icon only SynapsAi Vector.svg",
+      "kind": "brand-icon-derivative",
+      "status": "owner-approved"
+    },
+    {
+      "file": "brand/icon-512.png",
+      "source": "Icon only SynapsAi Vector.svg",
+      "kind": "brand-icon-derivative",
+      "status": "owner-approved"
+    },
+    {
+      "file": "og/careers.png",
+      "source": "Original SVG composition using the owner-supplied SynapsAi logo and symbol; careers page metadata.",
+      "kind": "original-social-card",
+      "status": "local-review",
+      "use": "English Careers Open Graph and Twitter image; 1200x630. No stock people or invented workplace."
+    }
+  ]
+}
