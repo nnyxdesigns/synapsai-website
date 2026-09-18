@@ -102,7 +102,7 @@ Production build, ESLint and TypeScript passed. Four targeted browser scenarios 
 
 Final confirmation: the three SEO scenarios passed after the last build; ESLint and TypeScript also passed. The distinct scenario count across this iteration is 31.
 
-## English article publication approval � 2026-09-17
+## English article publication approval — 2026-09-17
 
 All five articles now have an explicit published status following owner approval. Build and SEO asset checks passed; prior lint and TypeScript checks passed. Nine targeted scenarios validated public eligibility, staging exclusion, production sitemap inclusion, article content/metadata/links, and responsive index accessibility. The five article tests were updated to expect no review badge and passed on rerun. The refreshed desktop index screenshot was inspected. Actual publication dates remain unset until first public deployment. SITE_PUBLISHED remains false; no Firebase deployment occurred.
 
@@ -124,3 +124,35 @@ Preview build, 19-route SEO asset checks, lint and TypeScript passed. Five targe
 
 ### PC sharing correction
 Reproduced native sharing leaving the primary button pending on Chrome PC. Clipboard success was reproducible on localhost; the reported failure across all user browsers was not reproduced. Five targeted tests now pass, including actual legacy copy after Clipboard API rejection and a never-settling clipboard promise. Lint and preview build/TypeScript passed. Real development-server Chrome check (no API mocks): copied confirmation visible, sharing panel opens, button enabled, no page errors. Desktop/mobile screenshots reviewed. No Firebase deployment.
+
+## English homepage visual rhythm - 2026-09-18
+
+Production build, TypeScript and ESLint passed after the English homepage visual pass. The homepage now alternates dark technical and light white/mint surfaces, keeps the hero systems diagram unobstructed, and retains the real ImaginAi and ImaginAi Prof product media in the dedicated ecosystem showcase. Automated axe checks passed on the targeted corporate suite. Desktop and 390px mobile captures were inspected under .qa/home-desktop.png and .qa/home-mobile.png.
+
+The general responsive suite still reports a pre-existing 320px overflow in the French Company/Team tab navigation. The static Firebase emulator also returns 404 for Next RSC prefetch text requests during the legacy visual resource assertion; page HTML, media and the targeted accessibility checks remain valid. No French content restructuring or Firebase deployment was performed for this iteration.
+
+## Product mockup visual prototype - 2026-09-18
+
+Production build, TypeScript, ESLint and the focused English homepage Playwright check passed. The real ImaginAi and ImaginAi Prof compositions were inspected in the new framed product stages at desktop and mobile widths. The visual capture journey passed, and reduced-motion behavior remains covered by the shared accessibility checks. No new generated media was added; the current product media remains replaceable through the existing component boundary.
+
+## English ImaginAi mobile product page - 2026-09-18
+
+Production build, SEO checks, TypeScript and ESLint passed after the Linear Mobile-inspired rebuild of `/products/imaginai`. Three targeted Playwright scenarios passed: the Home-to-ImaginAi-to-case-study journey, ImaginAi responsive/accessibility/media checks at 320, 390, 768 and 1440px, and the unchanged ImaginAi Prof regression route. Automated axe checks passed at 390 and 1440px; every main-content image loaded with a positive natural width; no page errors or horizontal overflow were reported. Full-page and viewport captures at 390px and 1440px were inspected under `.qa/ia-v2-products-imaginai-*`. Generated product-photography concepts are recorded in the public media manifest and labelled on-page. English only; no Firebase deployment.
+
+After owner review, display titles were reduced to match the homepage hierarchy. The production build, lint and TypeScript checks passed again; the focused ImaginAi responsive/accessibility scenario passed at all four viewport widths, and refreshed 390px/1440px hero captures were inspected.
+
+The subsequent immersive hero revision passed the production build, SEO checks and the focused Playwright scenario at 320, 390, 768 and 1440px. The first responsive implementation exposed a hidden duplicate image to the media-loading test; it was replaced with one `<picture>` element and the rerun passed. Refreshed desktop and mobile viewport captures confirm that the gradient preserves copy contrast and the mobile product interface remains above the title. Store controls are disabled and the QR preview is intentionally non-scannable until verified destinations are supplied.
+
+The hero was then shortened by about 15% at each responsive tier. Build, lint, TypeScript, SEO and the four-width Playwright check passed; refreshed captures show the title and the following section entering the viewport earlier. The mobile fade was strengthened where the product image meets the copy to preserve legibility after the height reduction.
+
+## Insights archive
+
+The earlier archive verification passed for the initial ten-entry limit. The seven-entry adjustment retains the same partition and browser assertions, now expecting seven current entries and three archived ones in the current collection. ESLint and SEO asset checks pass. Final TypeScript, production-build and browser verification are pending resolution of an unrelated local TypeScript error in `tests/ia.spec.ts` (`naturalWidth` is read from a locator inferred as `SVGElement | HTMLElement`). No French archive rollout or Firebase deployment was performed.
+
+## Additional English Insights — 2026-09-18
+
+TypeScript, ESLint, the SEO asset check and the production build passed. Focused Playwright checks passed for the five new articles: content, internal links, canonical/article metadata, social image delivery, review status, source references and production sitemap exclusion (six checks), plus responsive 320/390/768/1024/1440px, reduced-motion, axe, media-loading and screenshot coverage (five checks). A 390px full-page capture of the learning-measurement article was inspected at `.qa/insights-v1-10-390.png`; the dedicated social card was also inspected. No French adaptation or Firebase deployment was performed.
+
+The Study Tools chapter was reorganized into a same-height desktop split: product image left and four capability cards right in a 2×2 grid. Build, lint, TypeScript, SEO and the focused four-width Playwright scenario passed. The refreshed 1440px full-page capture was inspected; tablet and mobile fall back to the existing stacked responsive treatment without overflow or accessibility violations.
+
+The interactive Study Tools pass added four generated concept mockups and a client-side tab interaction. The dedicated Playwright scenario passed hover, click, keyboard arrow navigation, selected-state changes, active-image loading and the mobile activation path. The selected translation state was inspected in `.qa/imaginai-study-tools-interaction.png`. Build, SEO, TypeScript, ESLint and the responsive/accessibility scenario also passed.

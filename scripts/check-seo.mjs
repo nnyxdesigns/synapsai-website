@@ -19,6 +19,11 @@ for (const file of [
   'article-connectivity-og.png',
   'article-system-og.png',
   'article-classroom-og.png',
+  'article-daily-use-og.png',
+  'article-people-og.png',
+  'article-costs-og.png',
+  'article-learning-system-og.png',
+  'article-measurement-og.png',
 ])
   await fs.access(`public/media/og/${file}`);
 for (const file of [

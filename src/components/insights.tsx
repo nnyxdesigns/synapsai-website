@@ -10,6 +10,7 @@ import {
   insightAuthors,
   readingMinutes,
   availableInsights,
+  splitInsightsForIndex,
 } from '@/lib/insights';
 import { localPath, published, site } from '@/lib/site';
 import type { Locale } from '@/lib/site';
@@ -138,7 +139,8 @@ export function InsightsIndex({
   entries: InsightEntry[];
   locale?: Locale;
 }) {
-  const featured = entries.find((e) => e.featured) || entries[0];
+  const { current, archive } = splitInsightsForIndex(entries);
+  const featured = current.find((e) => e.featured) || current[0];
   const fr = locale === 'fr';
   return (
     <div className="insights-index container">
@@ -194,7 +196,7 @@ export function InsightsIndex({
             </section>
           )
         }
-        items={entries.map((entry) => ({
+        items={current.map((entry) => ({
           id: entry.slug,
           category: entry.category,
           title: entry.title,
@@ -255,6 +257,30 @@ export function InsightsIndex({
         }))}
         locale={locale}
       />
+      {archive.length > 0 && (
+        <section className="insights-archive" aria-labelledby="insights-archive-heading">
+          <div className="insights-section-label">
+            <h2 id="insights-archive-heading">{fr ? 'Archives' : 'Archive'}</h2>
+            <span>
+              {fr
+                ? 'Publications prÃ©cÃ©dentes, toujours accessibles'
+                : 'Earlier publications, still available to read'}
+            </span>
+          </div>
+          <ol className="insights-archive-list">
+            {archive.map((entry) => (
+              <li key={entry.slug}>
+                <Link href={localPath(locale, `/insights/${entry.slug}`)}>
+                  <span className="article-category">{entry.category}</span>
+                  <h3>{entry.title}</h3>
+                  <ArticleMeta entry={entry} locale={locale} />
+                  <ArrowUpRight size={18} aria-hidden="true" />
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
       <div className="insights-endnote">
         <span>
           {fr

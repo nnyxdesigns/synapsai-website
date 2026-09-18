@@ -551,6 +551,497 @@
 .footer-socials a:hover {
   color: #edf1fa;
 }
+
+/* ImaginAi mobile product story — English route only. */
+.imaginai-mobile-page {
+  --imaginai-pink: #f40088;
+  --imaginai-purple: #ad4ac4;
+  overflow: clip;
+  background: #050506;
+}
+.imaginai-mobile-page .breadcrumbs {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 0;
+}
+.imaginai-mobile-hero {
+  position: relative;
+  min-height: 750px;
+  overflow: hidden;
+  isolation: isolate;
+  background: #050506;
+}
+.imaginai-mobile-hero::before,
+.imaginai-mobile-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.imaginai-mobile-hero::before {
+  background: linear-gradient(
+    to bottom,
+    rgb(5 5 6 / 4%) 0%,
+    rgb(5 5 6 / 6%) 40%,
+    rgb(5 5 6 / 78%) 72%,
+    #050506 94%
+  );
+}
+.imaginai-mobile-hero::after {
+  background: linear-gradient(90deg, rgb(5 5 6 / 86%) 0%, rgb(5 5 6 / 25%) 45%, transparent 72%);
+}
+.imaginai-mobile-hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.imaginai-mobile-hero-media picture {
+  position: absolute;
+  inset: 0;
+}
+.imaginai-mobile-hero-media img {
+  object-fit: cover;
+  object-position: center 38%;
+  animation: imaginai-image-breathe 10s ease-in-out infinite alternate;
+}
+.imaginai-mobile-hero-content {
+  position: relative;
+  z-index: 2;
+  min-height: 750px;
+  padding-block: 32px 46px;
+  display: flex;
+  flex-direction: column;
+}
+.imaginai-hero-concept-label {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  padding: 7px 10px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 999px;
+  background: rgb(3 3 4 / 55%);
+  backdrop-filter: blur(12px);
+  color: #c5c8cd;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.imaginai-mobile-hero-bottom {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 350px;
+  align-items: end;
+  gap: 82px;
+  margin-top: auto;
+}
+.imaginai-mobile-hero-copy {
+  max-width: 720px;
+  text-align: left;
+}
+.imaginai-mobile-hero-copy .eyebrow {
+  color: #d8fff4;
+}
+.imaginai-mobile-audience {
+  margin-top: 18px;
+  display: block;
+  color: #aeb2ba;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.imaginai-mobile-hero-copy h1 {
+  max-width: 720px;
+  margin: 20px auto 26px;
+  font-size: clamp(46px, 4.8vw, 66px);
+  line-height: 1.04;
+  letter-spacing: -3.5px;
+  text-wrap: balance;
+}
+.imaginai-mobile-hero-copy > p {
+  max-width: 550px;
+  margin: 0;
+  color: #c0c2c7;
+  font-size: 17px;
+  line-height: 1.65;
+}
+.imaginai-hero-learn-link {
+  margin-top: 22px;
+  border-color: #45464b;
+}
+.imaginai-download-panel {
+  display: grid;
+  gap: 12px;
+}
+.imaginai-qr-card,
+.imaginai-store-grid button {
+  border: 1px solid rgb(255 255 255 / 12%);
+  background: rgb(13 13 15 / 82%);
+  backdrop-filter: blur(18px);
+  color: #f7f8f8;
+}
+.imaginai-qr-card {
+  min-height: 116px;
+  padding: 18px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.imaginai-qr-card > div {
+  display: grid;
+  gap: 7px;
+}
+.imaginai-qr-card strong {
+  font-size: 15px;
+}
+.imaginai-qr-card span {
+  color: #979ba3;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.imaginai-placeholder-qr {
+  width: 80px;
+  height: 80px;
+  flex: 0 0 auto;
+}
+.imaginai-store-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.imaginai-store-grid button {
+  min-height: 100px;
+  padding: 17px;
+  border-radius: 13px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+  opacity: 1;
+  cursor: default;
+}
+.imaginai-store-grid button > span {
+  display: grid;
+  gap: 8px;
+}
+.imaginai-store-grid small {
+  color: #8f939b;
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.imaginai-store-grid strong {
+  font-size: 14px;
+  line-height: 1.25;
+}
+.imaginai-concept-media {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #27282c;
+  background: #0b0b0d;
+}
+.imaginai-concept-media img {
+  object-fit: cover;
+}
+.imaginai-concept-media figcaption {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  z-index: 2;
+  padding: 7px 10px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 999px;
+  background: rgb(3 3 4 / 72%);
+  backdrop-filter: blur(12px);
+  color: #d0d2d6;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+@keyframes imaginai-image-breathe {
+  from {
+    transform: scale(1.001);
+  }
+  to {
+    transform: scale(1.018);
+  }
+}
+.imaginai-mobile-intro {
+  padding-block: 150px 160px;
+}
+.imaginai-mobile-intro-copy {
+  max-width: 790px;
+  margin: 0 auto 76px;
+  text-align: center;
+}
+.imaginai-mobile-intro-copy .eyebrow {
+  justify-content: center;
+  color: #c0c3c9;
+}
+.imaginai-mobile-intro-copy h2 {
+  max-width: 760px;
+  margin: 26px auto 20px;
+  font-size: clamp(38px, 4vw, 54px);
+  letter-spacing: -2.7px;
+  text-wrap: balance;
+}
+.imaginai-mobile-intro-copy p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 17px;
+}
+.imaginai-intro-grid,
+.imaginai-support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+.imaginai-intro-grid article,
+.imaginai-support-grid article {
+  min-width: 0;
+}
+.imaginai-feature-frame {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid #26272a;
+  border-radius: 16px;
+  background: #0d0d0f;
+}
+.imaginai-feature-frame img {
+  object-fit: cover;
+  transition: transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.imaginai-intro-grid article:hover .imaginai-feature-frame img,
+.imaginai-support-grid article:hover .imaginai-feature-frame img {
+  transform: scale(1.025);
+}
+.imaginai-intro-grid h3,
+.imaginai-support-grid h3 {
+  margin: 24px 0 8px;
+  font-size: 24px;
+  letter-spacing: -0.8px;
+}
+.imaginai-intro-grid p,
+.imaginai-support-grid p {
+  max-width: 510px;
+  font-size: 15px;
+}
+.imaginai-mobile-chapter {
+  padding-block: 154px;
+  border-top: 1px solid #1e2023;
+}
+.imaginai-chapter-heading {
+  max-width: 800px;
+  margin-bottom: 74px;
+}
+.imaginai-chapter-heading h2 {
+  margin: 25px 0 24px;
+  font-size: clamp(40px, 4.2vw, 58px);
+  letter-spacing: -3px;
+  text-wrap: balance;
+}
+.imaginai-chapter-heading p {
+  max-width: 650px;
+  font-size: 17px;
+}
+.imaginai-chapter-heading-wide {
+  max-width: 930px;
+}
+.imaginai-mobile-chapter-light {
+  color: #0a0b0c;
+  background: #f4f5f2;
+  border-color: #e0e2dd;
+}
+.imaginai-mobile-chapter-light p {
+  color: #5e6268;
+}
+.imaginai-mobile-chapter-light .eyebrow {
+  color: #5b5f63;
+}
+.imaginai-concept-hand {
+  aspect-ratio: 4 / 3;
+  border: 1px solid #d8d9d5;
+  border-radius: 18px;
+  background: #dfe3e1;
+}
+.imaginai-support-grid {
+  margin-top: 28px;
+}
+.imaginai-mobile-chapter-light .imaginai-feature-frame {
+  border-color: #d6d8d5;
+  background: #e8e9e6;
+}
+.imaginai-study-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(360px, 0.85fr);
+  align-items: stretch;
+  gap: 24px;
+}
+.imaginai-study-stage {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  border: 1px solid #28292d;
+  border-radius: 20px;
+  background: #0b0b0d;
+}
+.imaginai-study-stage img {
+  opacity: 0;
+  object-fit: cover;
+  transition: opacity 320ms ease;
+}
+.imaginai-study-stage img.is-active {
+  opacity: 1;
+}
+.imaginai-study-concept-label {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  z-index: 2;
+  max-width: calc(100% - 36px);
+  padding: 7px 10px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 999px;
+  background: rgb(3 3 4 / 72%);
+  backdrop-filter: blur(12px);
+  color: #d0d2d6;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.imaginai-tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid #292a2e;
+  border-radius: 20px;
+}
+.imaginai-tool-grid button {
+  min-width: 0;
+  padding: 28px 24px;
+  border: 0;
+  border-radius: 0;
+  background: #070809;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  text-align: left;
+  transition:
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+.imaginai-tool-grid button:nth-child(odd) {
+  border-right: 1px solid #292a2e;
+}
+.imaginai-tool-grid button:nth-child(-n + 2) {
+  border-bottom: 1px solid #292a2e;
+}
+.imaginai-tool-grid button:hover,
+.imaginai-tool-grid button.is-active {
+  background: #111714;
+}
+.imaginai-tool-grid button.is-active {
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+.imaginai-tool-grid button:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline-offset: -5px;
+}
+.imaginai-tool-grid svg {
+  width: 25px;
+  margin-bottom: auto;
+  color: var(--accent);
+}
+.imaginai-tool-grid button > span {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+.imaginai-tool-grid strong {
+  font-size: 19px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+.imaginai-tool-grid small {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.imaginai-mobile-chapter-mint {
+  color: #072019;
+  background: #d8fff4;
+  border: 0;
+}
+.imaginai-mobile-chapter-mint p {
+  color: #3e6158;
+}
+.imaginai-mobile-chapter-mint .eyebrow {
+  color: #245349;
+}
+.imaginai-mobile-chapter-mint .text-link {
+  border-color: #a7d8ca;
+}
+.imaginai-connected-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 78px;
+}
+.imaginai-connected-layout h2 {
+  margin: 25px 0 24px;
+  font-size: clamp(38px, 4vw, 54px);
+  letter-spacing: -2.7px;
+}
+.imaginai-connected-layout p {
+  max-width: 550px;
+  font-size: 17px;
+}
+.imaginai-connected-visual {
+  overflow: hidden;
+  border: 1px solid #afdacf;
+  border-radius: 18px;
+  background: #0a0b0c;
+}
+.imaginai-connected-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.imaginai-mobile-closing {
+  padding-block: 150px;
+  text-align: center;
+}
+.imaginai-mobile-closing .eyebrow {
+  justify-content: center;
+  color: #c1c4ca;
+}
+.imaginai-mobile-closing h2 {
+  max-width: 850px;
+  margin: 27px auto 22px;
+  font-size: clamp(40px, 4.2vw, 58px);
+  letter-spacing: -3px;
+  text-wrap: balance;
+}
+.imaginai-mobile-closing > p {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 17px;
+}
+.imaginai-mobile-closing > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 35px;
+}
 @media (max-width: 1100px) {
   .product-portfolio-row,
   .product-detail-hero,
@@ -576,6 +1067,22 @@
   }
   .footer-main-en .footer-brand {
     grid-column: 1/-1;
+  }
+  .imaginai-mobile-hero-copy h1 {
+    letter-spacing: -3px;
+  }
+  .imaginai-mobile-hero-bottom {
+    gap: 45px;
+  }
+  .imaginai-mobile-chapter,
+  .imaginai-mobile-closing {
+    padding-block: 120px;
+  }
+  .imaginai-connected-layout {
+    gap: 45px;
+  }
+  .imaginai-tool-grid button {
+    padding: 23px 19px;
   }
 }
 @media (max-width: 850px) {
@@ -615,6 +1122,44 @@
   }
   .impact-intro {
     gap: 25px;
+  }
+  .imaginai-mobile-hero-copy h1 {
+    font-size: clamp(46px, 7vw, 64px);
+    letter-spacing: -3.4px;
+  }
+  .imaginai-mobile-hero,
+  .imaginai-mobile-hero-content {
+    min-height: 900px;
+  }
+  .imaginai-mobile-hero-bottom {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .imaginai-download-panel {
+    width: min(100%, 350px);
+    margin-left: auto;
+  }
+  .imaginai-mobile-intro {
+    padding-block: 105px 115px;
+  }
+  .imaginai-mobile-chapter,
+  .imaginai-mobile-closing {
+    padding-block: 100px;
+  }
+  .imaginai-tool-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .imaginai-study-layout {
+    grid-template-columns: 1fr;
+  }
+  .imaginai-tool-grid button:nth-child(2) {
+    border-right: 0;
+  }
+  .imaginai-tool-grid button:nth-child(-n + 2) {
+    border-bottom: 1px solid #292a2e;
+  }
+  .imaginai-connected-layout {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 600px) {
@@ -758,5 +1303,184 @@
   }
   .footer-socials {
     gap: 18px;
+  }
+  .imaginai-mobile-page .breadcrumbs {
+    margin-bottom: 0;
+  }
+  .imaginai-mobile-hero {
+    min-height: 1010px;
+  }
+  .imaginai-mobile-hero::before {
+    background: linear-gradient(
+      to bottom,
+      rgb(5 5 6 / 2%) 0%,
+      rgb(5 5 6 / 12%) 32%,
+      rgb(5 5 6 / 94%) 48%,
+      #050506 61%
+    );
+  }
+  .imaginai-mobile-hero::after {
+    background: linear-gradient(90deg, rgb(5 5 6 / 32%), transparent 75%);
+  }
+  .imaginai-mobile-hero-media {
+    height: 525px;
+    background:
+      radial-gradient(circle at 65% 33%, rgb(244 0 136 / 18%), transparent 36%),
+      radial-gradient(circle at 20% 72%, rgb(94 255 217 / 13%), transparent 34%), #090a0b;
+  }
+  .imaginai-mobile-hero-media img {
+    object-fit: contain;
+    object-position: center top;
+    animation: imaginai-image-breathe 10s ease-in-out infinite alternate;
+  }
+  .imaginai-mobile-hero-content {
+    min-height: 1010px;
+    padding-block: 18px 30px;
+  }
+  .imaginai-hero-concept-label {
+    display: none;
+  }
+  .imaginai-mobile-hero-bottom {
+    gap: 28px;
+  }
+  .imaginai-mobile-hero-copy {
+    max-width: none;
+    text-align: left;
+  }
+  .imaginai-mobile-hero-copy .eyebrow {
+    font-size: 10px;
+  }
+  .imaginai-mobile-hero-copy h1 {
+    margin: 17px 0 20px;
+    font-size: clamp(38px, 11vw, 48px);
+    line-height: 1.06;
+    letter-spacing: -2.5px;
+  }
+  .imaginai-mobile-hero-copy > p {
+    margin: 0;
+    font-size: 16px;
+  }
+  .imaginai-mobile-audience {
+    margin-top: 14px;
+    font-size: 9px;
+  }
+  .imaginai-hero-learn-link {
+    margin-top: 17px;
+  }
+  .imaginai-download-panel {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+  }
+  .imaginai-qr-card {
+    min-height: 102px;
+    padding: 14px 16px;
+  }
+  .imaginai-placeholder-qr {
+    width: 70px;
+    height: 70px;
+  }
+  .imaginai-store-grid button {
+    min-height: 90px;
+    padding: 14px;
+    gap: 9px;
+  }
+  .imaginai-store-grid strong {
+    font-size: 13px;
+  }
+  .imaginai-concept-media figcaption {
+    left: 10px;
+    bottom: 10px;
+    max-width: calc(100% - 20px);
+    font-size: 8px;
+  }
+  .imaginai-mobile-intro {
+    padding-block: 80px 88px;
+  }
+  .imaginai-mobile-intro-copy {
+    margin-bottom: 45px;
+    text-align: left;
+  }
+  .imaginai-mobile-intro-copy .eyebrow {
+    justify-content: flex-start;
+  }
+  .imaginai-mobile-intro-copy h2,
+  .imaginai-chapter-heading h2,
+  .imaginai-connected-layout h2,
+  .imaginai-mobile-closing h2 {
+    font-size: 34px;
+    letter-spacing: -1.8px;
+  }
+  .imaginai-mobile-intro-copy p,
+  .imaginai-chapter-heading p,
+  .imaginai-connected-layout p,
+  .imaginai-mobile-closing > p {
+    font-size: 15px;
+  }
+  .imaginai-intro-grid,
+  .imaginai-support-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+  .imaginai-feature-frame {
+    border-radius: 11px;
+  }
+  .imaginai-intro-grid h3,
+  .imaginai-support-grid h3 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .imaginai-mobile-chapter,
+  .imaginai-mobile-closing {
+    padding-block: 78px;
+  }
+  .imaginai-chapter-heading {
+    margin-bottom: 42px;
+  }
+  .imaginai-concept-hand,
+  .imaginai-study-stage,
+  .imaginai-connected-visual {
+    border-radius: 12px;
+  }
+  .imaginai-study-stage {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+  .imaginai-concept-hand {
+    aspect-ratio: 0.92;
+  }
+  .imaginai-concept-hand img {
+    object-position: 58% center;
+  }
+  .imaginai-support-grid {
+    margin-top: 42px;
+  }
+  .imaginai-tool-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+  .imaginai-tool-grid button,
+  .imaginai-tool-grid button:nth-child(2) {
+    border-right: 0;
+    border-bottom: 1px solid #292a2e;
+    padding: 28px 22px 30px;
+  }
+  .imaginai-tool-grid button:last-child {
+    border-bottom: 0;
+  }
+  .imaginai-tool-grid button > span {
+    margin-top: 22px;
+    gap: 10px;
+  }
+  .imaginai-connected-layout {
+    gap: 45px;
+  }
+  .imaginai-mobile-closing > div {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .imaginai-mobile-closing .text-link {
+    justify-content: center;
   }
 }

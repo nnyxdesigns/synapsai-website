@@ -72,3 +72,219 @@
   width: 18px;
   height: 18px;
 }
+
+/* English homepage visual rhythm: alternate calm light surfaces with the technical dark system. */
+.home-english {
+  --home-light: #f2f7f4;
+  --home-light-ink: #101a17;
+  --home-light-muted: #536760;
+  --home-light-line: #cbdad3;
+}
+.home-band-light {
+  background: var(--home-light);
+  color: var(--home-light-ink);
+}
+.home-band-dark {
+  background: var(--canvas);
+  color: var(--ink);
+}
+.home-band-light .proof-strip,
+.home-band-light .capability-list,
+.home-band-light .capability-row,
+.home-band-light .problem-list > a {
+  border-color: var(--home-light-line);
+}
+.home-band-light p,
+.home-band-light .proof-intro,
+.home-band-light .proof-item span,
+.home-band-light .capabilities-bottom > span,
+.home-band-light .approach-section p {
+  color: var(--home-light-muted);
+}
+.home-band-light .proof-intro strong,
+.home-band-light .proof-item > strong,
+.home-band-light h2,
+.home-band-light h3 {
+  color: var(--home-light-ink);
+}
+.home-band-light .proof-award > svg,
+.home-band-light .eyebrow {
+  color: #286b5b;
+}
+.home-band-light .capability-row:hover {
+  background: #e7f0eb;
+}
+.home-band-light .capability-icon {
+  border-color: var(--home-light-line);
+  background: #e4eee9;
+}
+.home-band-light .circle-arrow {
+  border-color: var(--home-light-line);
+}
+.home-band-light .circle-arrow:hover,
+.home-band-light .capability-row:hover .circle-arrow {
+  background: #dcebe4;
+}
+.home-band-light .text-link {
+  border-color: var(--home-light-line);
+  color: var(--home-light-ink);
+}
+.home-band-light .text-link:hover {
+  color: #287c68;
+}
+.home-hero {
+  min-height: 685px;
+}
+.home-hero-visual {
+  position: relative;
+  min-width: 0;
+}
+.home-english .ecosystem-feature {
+  background: var(--home-light);
+  color: var(--home-light-ink);
+  border-color: var(--home-light-line);
+  padding-block: 102px 88px;
+}
+.home-english .ecosystem-feature .section-heading > p,
+.home-english .ecosystem-feature .ecosystem-product-copy p,
+.home-english .ecosystem-feature-end p {
+  color: var(--home-light-muted);
+}
+.home-english .ecosystem-feature .ecosystem-product-copy .eyebrow {
+  color: #287c68;
+}
+.home-english .ecosystem-feature .ecosystem-feature-end {
+  border-color: var(--home-light-line);
+}
+.home-english .ecosystem-product-stage {
+  position: relative;
+  min-height: 470px;
+  overflow: hidden;
+  padding: 27px 30px 30px;
+  border: 1px solid #c3d7cd;
+  border-radius: 16px;
+  background: radial-gradient(circle at 50% 48%, #ffffffb8 0, #ffffff00 48%), #e5efe9;
+  isolation: isolate;
+}
+.home-english .ecosystem-product-stage::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.55;
+  background-image:
+    linear-gradient(#b8cec3 1px, transparent 1px),
+    linear-gradient(90deg, #b8cec3 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, #000, transparent 82%);
+}
+.home-english .ecosystem-stage-index,
+.home-english .ecosystem-stage-status {
+  position: absolute;
+  top: 18px;
+  z-index: 3;
+  font:
+    10px/1.4 Consolas,
+    monospace;
+  letter-spacing: 1px;
+  color: #3c6657;
+}
+.home-english .ecosystem-stage-index {
+  left: 20px;
+}
+.home-english .ecosystem-stage-status {
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.home-english .ecosystem-stage-status i {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #1c9b79;
+  box-shadow: 0 0 0 4px #1c9b7926;
+}
+.home-english .ecosystem-product-stage .product-screen {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  margin: 28px auto 0;
+  border-color: #a8c0b5;
+  box-shadow: 0 24px 45px #35524826;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
+}
+.home-english .ecosystem-product-card-1 .product-screen {
+  transform: rotate(-1.2deg) translateY(7px);
+  animation: ecosystem-float-one 8s ease-in-out infinite;
+}
+.home-english .ecosystem-product-card-2 .product-screen {
+  transform: rotate(1.2deg) translateY(7px);
+  animation: ecosystem-float-two 9s ease-in-out infinite;
+}
+.home-english .ecosystem-product-stage:hover .product-screen {
+  animation-play-state: paused;
+  box-shadow: 0 30px 55px #35524838;
+}
+@keyframes ecosystem-float-one {
+  0%,
+  100% {
+    transform: rotate(-1.2deg) translateY(7px);
+  }
+  50% {
+    transform: rotate(-0.4deg) translateY(-3px);
+  }
+}
+@keyframes ecosystem-float-two {
+  0%,
+  100% {
+    transform: rotate(1.2deg) translateY(7px);
+  }
+  50% {
+    transform: rotate(0.4deg) translateY(-3px);
+  }
+}
+.home-english .ecosystem-feature .text-link {
+  border-color: var(--home-light-line);
+  color: var(--home-light-ink);
+}
+.home-english .home-problems-band {
+  background: #080b0d;
+}
+.home-english .home-proof-band {
+  padding-bottom: 24px;
+  border-top: 1px solid var(--line);
+}
+.home-english .home-proof-band .home-recognition {
+  border-bottom: 1px solid var(--line);
+}
+.home-english .home-band-light .orbit-ring {
+  border-color: #adc8bc;
+}
+.home-english .home-band-light .orbit-center {
+  background: #dfece6;
+  border-color: var(--home-light-line);
+}
+.home-english .approach-section {
+  padding-block: 104px;
+}
+
+@media (max-width: 760px) {
+  .home-hero {
+    min-height: auto;
+  }
+  .home-hero-visual {
+    display: grid;
+    gap: 16px;
+  }
+  .home-english .ecosystem-feature {
+    padding-block: 72px 62px;
+  }
+  .home-english .approach-section {
+    padding-block: 72px;
+  }
+}

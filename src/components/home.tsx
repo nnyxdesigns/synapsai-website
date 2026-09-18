@@ -6,6 +6,7 @@ import { SystemVisual, OrbitVisual } from './visuals';
 import { EcosystemFeature } from './ecosystem';
 import { InsightsPreview } from './insights';
 export function Home({ locale }: { locale: Locale }) {
+  if (locale === 'en') return <EnglishHome />;
   const t = copy[locale];
   const icons = [Cpu, Layers3, Smartphone];
   return (
@@ -124,38 +125,34 @@ export function Home({ locale }: { locale: Locale }) {
           <TextLink href={localPath(locale, '/solutions')}>{t.allSolutions}</TextLink>
         </div>
       </section>
-      {locale === 'en' ? (
-        <EcosystemFeature />
-      ) : (
-        <section className="work-section">
-          <div className="container work-grid">
-            <div className="work-copy">
-              <span className="eyebrow">{t.workLabel}</span>
-              <h2>{t.workTitle}</h2>
-              <p>{t.workDesc}</p>
-              <div className="work-tags">
-                <span>{locale === 'fr' ? 'Ingénierie produit' : 'Product engineering'}</span>
-                <span>{locale === 'fr' ? 'Intelligence artificielle' : 'Applied AI'}</span>
-                <span>EdTech</span>
-              </div>
-              <TextLink light href={localPath(locale, '/work/imaginai')}>
-                {t.caseStudy}
-              </TextLink>
-              <div className="work-proof">
-                <strong>
-                  143K<span>+</span>
-                </strong>
-                <span>
-                  {locale === 'fr'
-                    ? 'apprenants accompagnés\npar ImaginAi'
-                    : 'learners supported\nby ImaginAi'}
-                </span>
-              </div>
+      <section className="work-section">
+        <div className="container work-grid">
+          <div className="work-copy">
+            <span className="eyebrow">{t.workLabel}</span>
+            <h2>{t.workTitle}</h2>
+            <p>{t.workDesc}</p>
+            <div className="work-tags">
+              <span>{locale === 'fr' ? 'Ingénierie produit' : 'Product engineering'}</span>
+              <span>{locale === 'fr' ? 'Intelligence artificielle' : 'Applied AI'}</span>
+              <span>EdTech</span>
             </div>
-            <ProductImage locale={locale} />
+            <TextLink light href={localPath(locale, '/work/imaginai')}>
+              {t.caseStudy}
+            </TextLink>
+            <div className="work-proof">
+              <strong>
+                143K<span>+</span>
+              </strong>
+              <span>
+                {locale === 'fr'
+                  ? 'apprenants accompagnés\npar ImaginAi'
+                  : 'learners supported\nby ImaginAi'}
+              </span>
+            </div>
           </div>
-        </section>
-      )}
+          <ProductImage locale={locale} />
+        </div>
+      </section>
       <section className="section container problems-section">
         <div>
           <span className="eyebrow">{t.problemsLabel}</span>
@@ -183,18 +180,159 @@ export function Home({ locale }: { locale: Locale }) {
           <TextLink href={localPath(locale, '/company/about')}>{t.company}</TextLink>
         </div>
       </section>
-      {locale === 'en' && (
-        <>
-          <div className="container home-recognition">
-            <span>PROMEX 2025 · Award</span>
-            <span>CONIA 2025 · Participation</span>
-            <span>CITS 2026 · Bootcamp</span>
-            <TextLink href="/company/impact">Recognition & milestones</TextLink>
-          </div>
-          <InsightsPreview />
-        </>
-      )}
       <Cta locale={locale} />
     </>
+  );
+}
+
+function EnglishHome() {
+  const t = copy.en;
+  const icons = [Cpu, Layers3, Smartphone];
+
+  return (
+    <div className="home-english">
+      <section className="hero container home-hero">
+        <div className="hero-copy">
+          <span className="eyebrow">
+            <span className="accent-dash" />
+            {t.eyebrow}
+          </span>
+          <h1>
+            {t.hero[0]}
+            <br />
+            <span>{t.hero[1]}</span>
+          </h1>
+          <p>{t.intro}</p>
+          <div className="hero-actions">
+            <Link className="button button-dark" href="/contact">
+              {t.talk}
+              <ArrowUpRight size={17} />
+            </Link>
+            <TextLink href="/work">{t.explore}</TextLink>
+          </div>
+          <div className="hero-origin">
+            <Globe2 size={13} />
+            {t.origin}
+          </div>
+        </div>
+        <div className="home-hero-visual">
+          <SystemVisual locale="en" />
+        </div>
+        <a href="#capabilities" className="scroll-hint" aria-label="Discover our capabilities">
+          <ArrowDown size={14} />
+          <span>SCROLL TO DISCOVER</span>
+        </a>
+      </section>
+
+      <section className="home-band home-band-light">
+        <div className="proof-strip container" aria-label="Proof of execution">
+          <div className="proof-intro">
+            Ideas made real.
+            <br />
+            <strong>Products in people’s hands.</strong>
+          </div>
+          <div className="proof-item">
+            <strong>{facts.learners}</strong>
+            <span>{t.proof[0]}</span>
+          </div>
+          <div className="proof-item">
+            <strong>{t.proof[1]}</strong>
+            <span>{t.proof[2]}</span>
+          </div>
+          <div className="proof-item proof-award">
+            <Award size={27} strokeWidth={1.3} />
+            <div>
+              <strong>{t.proof[3]}</strong>
+              <span>{t.proof[4]}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="capabilities" className="home-band home-band-dark">
+        <div className="section container capabilities">
+          <div className="section-heading">
+            <div>
+              <span className="eyebrow">{t.capabilities}</span>
+              <h2>{t.capabilityTitle}</h2>
+            </div>
+            <p>{t.capabilityIntro}</p>
+          </div>
+          <div className="capability-list">
+            {solutions.en.slice(0, 3).map((s, i) => {
+              const Icon = icons[i];
+              return (
+                <Link
+                  href={`/solutions/${solutionSlugs[i]}`}
+                  className="capability-row"
+                  key={s.title}
+                >
+                  <span className="capability-number">0{i + 1}</span>
+                  <span className="capability-icon">
+                    <Icon size={24} strokeWidth={1.4} />
+                  </span>
+                  <h3>{i === 2 ? 'Digital Products' : s.title}</h3>
+                  <p>{s.description}</p>
+                  <span className="circle-arrow">
+                    <ArrowUpRight size={20} />
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+          <div className="capabilities-bottom">
+            <span>Product thinking, design, and engineering. Connected.</span>
+            <TextLink href="/solutions">{t.allSolutions}</TextLink>
+          </div>
+        </div>
+      </section>
+
+      <EcosystemFeature />
+
+      <section className="home-band home-band-dark home-problems-band">
+        <div className="section container problems-section">
+          <div>
+            <span className="eyebrow">{t.problemsLabel}</span>
+            <h2>{t.problemsTitle}</h2>
+          </div>
+          <div className="problem-list">
+            {t.problems.map((problem, i) => (
+              <Link key={problem} href={`/solutions/${solutionSlugs[i]}`}>
+                <span className="problem-index">0{i + 1}</span>
+                <div>
+                  <h3>{problem}</h3>
+                  <span>{t.problemCopy[i]}</span>
+                </div>
+                <ArrowUpRight size={22} />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="home-band home-band-light">
+        <div className="approach-section container">
+          <OrbitVisual />
+          <div>
+            <span className="eyebrow">{t.approachLabel}</span>
+            <h2>{t.approachTitle}</h2>
+            <p>{t.approachDesc}</p>
+            <TextLink href="/company/about">{t.company}</TextLink>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-band home-band-dark home-proof-band">
+        <div className="container home-recognition">
+          <span>PROMEX 2025 · Award</span>
+          <span>CONIA 2025 · Participation</span>
+          <span>CITS 2026 · Bootcamp</span>
+          <TextLink href="/company/impact">Recognition &amp; milestones</TextLink>
+        </div>
+        <InsightsPreview />
+      </section>
+
+      <Cta locale="en" />
+    </div>
   );
 }

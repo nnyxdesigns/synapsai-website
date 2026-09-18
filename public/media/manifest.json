@@ -62,142 +62,6 @@
       "file": "fonts/inter-variable.woff2"
     },
     {
-      "file": "insights/context.svg",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "original-conceptual-vector",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/context-mobile.svg",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "original-conceptual-vector",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/context-og.png",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "editorial-social-preview",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/learning.svg",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "original-conceptual-vector",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/learning-mobile.svg",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "original-conceptual-vector",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/learning-og.png",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "editorial-social-preview",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/connectivity.svg",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "original-conceptual-vector",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/connectivity-mobile.svg",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "original-conceptual-vector",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/connectivity-og.png",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "editorial-social-preview",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/system.svg",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "original-conceptual-vector",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/system-mobile.svg",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "original-conceptual-vector",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/system-og.png",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "editorial-social-preview",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/classroom.svg",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "original-conceptual-vector",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/classroom-mobile.svg",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "original-conceptual-vector",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/classroom-og.png",
-      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
-      "reviewedAt": "2026-09-16",
-      "kind": "editorial-social-preview",
-      "status": "review",
-      "use": "Insights V1; conceptual illustration, no measured data or product UI"
-    },
-    {
-      "file": "insights/youssouf-nchetkou-ndam-avatar.webp",
-      "source": "Derivative of approved team/youssouf-nchetkou-ndam.png; resized only",
-      "reviewedAt": "2026-09-16",
-      "kind": "optimized-official-portrait",
-      "status": "review",
-      "use": "Insights author avatar"
-    },
-    {
-      "file": "insights/frank-arnaud-yap-avatar.webp",
-      "source": "Derivative of approved team/frank-arnaud-yap.png; resized only",
-      "reviewedAt": "2026-09-16",
-      "kind": "optimized-official-portrait",
-      "status": "review",
-      "use": "Insights author avatar"
-    },
-    {
       "file": "products/imaginai-mobile-hand.webp",
       "source": "https://imaginai.io/assets/img/hero-phone.png",
       "reviewedAt": "2026-09-16",
@@ -228,6 +92,66 @@
       "kind": "official-product-composition",
       "status": "owner-approved",
       "use": "Matches the product screenshots supplied by the owner; optimized without altering the interface."
+    },
+    {
+      "file": "generated/imaginai/imaginai-mobile-hero-concept.webp",
+      "source": "OpenAI built-in image generation using the owner-supplied ImaginAi mobile home screenshot",
+      "reviewedAt": "2026-09-18",
+      "generatedAt": "2026-09-18",
+      "kind": "generated-product-concept",
+      "status": "local-review",
+      "use": "English ImaginAi product-page hero; visibly labelled as a concept visualization.",
+      "prompt": "Premium photorealistic smartphone product presentation on a near-black studio surface, preserving the recognizable supplied ImaginAi interface, with restrained magenta and SynapsAi mint lighting and clear copy space."
+    },
+    {
+      "file": "generated/imaginai/imaginai-mobile-hand-concept.webp",
+      "source": "OpenAI built-in image generation using the owner-supplied ImaginAi mobile home screenshot",
+      "reviewedAt": "2026-09-18",
+      "generatedAt": "2026-09-18",
+      "kind": "generated-product-concept",
+      "status": "local-review",
+      "use": "English ImaginAi product-page feature visual; visibly labelled as a concept visualization.",
+      "prompt": "Close editorial product photograph of a dark-skinned adult hand holding a black phone with the supplied ImaginAi interface, on a warm-gray studio background with a subtle mint highlight."
+    },
+    {
+      "file": "generated/imaginai/study-document-concept.webp",
+      "source": "OpenAI built-in image generation using the owner-approved ImaginAi mobile composition as reference",
+      "reviewedAt": "2026-09-18",
+      "generatedAt": "2026-09-18",
+      "kind": "generated-ui-product-concept",
+      "status": "local-review",
+      "use": "Interactive Study Tools document-analysis state; labelled as a concept visualization.",
+      "prompt": "Premium 4:3 smartphone product photograph with a fictional ImaginAi document-analysis screen, worksheet preview and generic action cards on a dark magenta/mint studio surface."
+    },
+    {
+      "file": "generated/imaginai/study-practice-concept.webp",
+      "source": "OpenAI built-in image generation using the owner-approved ImaginAi mobile composition as reference",
+      "reviewedAt": "2026-09-18",
+      "generatedAt": "2026-09-18",
+      "kind": "generated-ui-product-concept",
+      "status": "local-review",
+      "use": "Interactive Study Tools practice-and-correction state; labelled as a concept visualization.",
+      "prompt": "Premium 4:3 smartphone product photograph with a fictional ImaginAi multiple-choice practice screen, generic correction panel and simple progress indicator."
+    },
+    {
+      "file": "generated/imaginai/study-voice-concept.webp",
+      "source": "OpenAI built-in image generation using the owner-approved ImaginAi mobile composition as reference",
+      "reviewedAt": "2026-09-18",
+      "generatedAt": "2026-09-18",
+      "kind": "generated-ui-product-concept",
+      "status": "local-review",
+      "use": "Interactive Study Tools voice-learning state; labelled as a concept visualization.",
+      "prompt": "Premium 4:3 smartphone product photograph with a fictional ImaginAi voice-learning screen, microphone control, waveform and generic voice-action cards."
+    },
+    {
+      "file": "generated/imaginai/study-translation-concept.webp",
+      "source": "OpenAI built-in image generation using the owner-approved ImaginAi mobile composition as reference",
+      "reviewedAt": "2026-09-18",
+      "generatedAt": "2026-09-18",
+      "kind": "generated-ui-product-concept",
+      "status": "local-review",
+      "use": "Interactive Study Tools translation state; labelled as a concept visualization.",
+      "prompt": "Premium 4:3 smartphone product photograph with a fictional ImaginAi bilingual translation screen, language selectors, generic source/translated sentences and listen control."
     },
     {
       "file": "fonts/archivo-variable.ttf",
@@ -331,41 +255,6 @@
     },
     {
       "file": "og/ai-automation.png",
-      "source": "scripts/generate-seo-media.mjs",
-      "kind": "original-branded-social-card",
-      "status": "review",
-      "reviewedAt": "2026-09-16"
-    },
-    {
-      "file": "og/article-classroom-og.png",
-      "source": "scripts/generate-seo-media.mjs",
-      "kind": "original-branded-social-card",
-      "status": "review",
-      "reviewedAt": "2026-09-16"
-    },
-    {
-      "file": "og/article-connectivity-og.png",
-      "source": "scripts/generate-seo-media.mjs",
-      "kind": "original-branded-social-card",
-      "status": "review",
-      "reviewedAt": "2026-09-16"
-    },
-    {
-      "file": "og/article-context-og.png",
-      "source": "scripts/generate-seo-media.mjs",
-      "kind": "original-branded-social-card",
-      "status": "review",
-      "reviewedAt": "2026-09-16"
-    },
-    {
-      "file": "og/article-learning-og.png",
-      "source": "scripts/generate-seo-media.mjs",
-      "kind": "original-branded-social-card",
-      "status": "review",
-      "reviewedAt": "2026-09-16"
-    },
-    {
-      "file": "og/article-system-og.png",
       "source": "scripts/generate-seo-media.mjs",
       "kind": "original-branded-social-card",
       "status": "review",
@@ -514,6 +403,342 @@
       "kind": "original-social-card",
       "status": "local-review",
       "use": "English Careers Open Graph and Twitter image; 1200x630. No stock people or invented workplace."
+    },
+    {
+      "file": "insights/context.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/context-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/context-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "og/article-context-og.png",
+      "source": "Derived from insights/context-og.png with approved SynapsAi wordmark; scripts/generate-seo-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights article Open Graph and X image; conceptual illustration, no product UI or measured data"
+    },
+    {
+      "file": "insights/learning.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/learning-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/learning-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "og/article-learning-og.png",
+      "source": "Derived from insights/learning-og.png with approved SynapsAi wordmark; scripts/generate-seo-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights article Open Graph and X image; conceptual illustration, no product UI or measured data"
+    },
+    {
+      "file": "insights/connectivity.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/connectivity-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/connectivity-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "og/article-connectivity-og.png",
+      "source": "Derived from insights/connectivity-og.png with approved SynapsAi wordmark; scripts/generate-seo-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights article Open Graph and X image; conceptual illustration, no product UI or measured data"
+    },
+    {
+      "file": "insights/system.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/system-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/system-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "og/article-system-og.png",
+      "source": "Derived from insights/system-og.png with approved SynapsAi wordmark; scripts/generate-seo-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights article Open Graph and X image; conceptual illustration, no product UI or measured data"
+    },
+    {
+      "file": "insights/classroom.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/classroom-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/classroom-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "og/article-classroom-og.png",
+      "source": "Derived from insights/classroom-og.png with approved SynapsAi wordmark; scripts/generate-seo-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights article Open Graph and X image; conceptual illustration, no product UI or measured data"
+    },
+    {
+      "file": "insights/daily-use.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/daily-use-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/daily-use-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "og/article-daily-use-og.png",
+      "source": "Derived from insights/daily-use-og.png with approved SynapsAi wordmark; scripts/generate-seo-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights article Open Graph and X image; conceptual illustration, no product UI or measured data"
+    },
+    {
+      "file": "insights/people.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/people-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/people-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "og/article-people-og.png",
+      "source": "Derived from insights/people-og.png with approved SynapsAi wordmark; scripts/generate-seo-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights article Open Graph and X image; conceptual illustration, no product UI or measured data"
+    },
+    {
+      "file": "insights/costs.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/costs-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/costs-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "og/article-costs-og.png",
+      "source": "Derived from insights/costs-og.png with approved SynapsAi wordmark; scripts/generate-seo-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights article Open Graph and X image; conceptual illustration, no product UI or measured data"
+    },
+    {
+      "file": "insights/learning-system.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/learning-system-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/learning-system-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "og/article-learning-system-og.png",
+      "source": "Derived from insights/learning-system-og.png with approved SynapsAi wordmark; scripts/generate-seo-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights article Open Graph and X image; conceptual illustration, no product UI or measured data"
+    },
+    {
+      "file": "insights/measurement.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/measurement-mobile.svg",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "original-conceptual-vector",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "insights/measurement-og.png",
+      "source": "Original SynapsAi editorial composition; scripts/generate-insights-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights conceptual illustration; no measured data or product UI"
+    },
+    {
+      "file": "og/article-measurement-og.png",
+      "source": "Derived from insights/measurement-og.png with approved SynapsAi wordmark; scripts/generate-seo-media.mjs",
+      "reviewedAt": "2026-09-18",
+      "kind": "editorial-social-preview",
+      "status": "review",
+      "use": "Insights article Open Graph and X image; conceptual illustration, no product UI or measured data"
+    },
+    {
+      "file": "insights/youssouf-nchetkou-ndam-avatar.webp",
+      "source": "Derivative of approved team/youssouf-nchetkou-ndam.png; resized only",
+      "reviewedAt": "2026-09-16",
+      "kind": "optimized-official-portrait",
+      "status": "review",
+      "use": "Insights author avatar"
+    },
+    {
+      "file": "insights/frank-arnaud-yap-avatar.webp",
+      "source": "Derivative of approved team/frank-arnaud-yap.png; resized only",
+      "reviewedAt": "2026-09-16",
+      "kind": "optimized-official-portrait",
+      "status": "review",
+      "use": "Insights author avatar"
     }
   ]
 }

@@ -115,15 +115,42 @@ test('mobile menu, French layout, and media remain usable across screen sizes', 
     'false',
   );
   await page.goto('/');
-  await page.locator('.product-image').scrollIntoViewIfNeeded();
-  await expect(page.locator('.product-image>img')).toBeVisible();
+  await page.locator('.ecosystem-product-grid .product-screen').first().scrollIntoViewIfNeeded();
+  await expect(page.locator('.ecosystem-product-grid .product-screen').first()).toBeVisible();
   await expect
     .poll(() =>
       page
-        .locator('.product-image>img')
+        .locator('.ecosystem-product-grid .product-screen img')
+        .first()
         .evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0),
     )
     .toBe(true);
+});
+test('English homepage uses alternating surfaces and real product proof', async ({ page }) => {
+  for (const width of [390, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto('/');
+    await expect(page.locator('.home-english')).toHaveCount(1);
+    await expect(page.locator('.ecosystem-product-grid .product-screen')).toHaveCount(2);
+    await expect(page.locator('.ecosystem-feature')).toBeVisible();
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
+    ).toBe(true);
+    expect(
+      await page
+        .locator('.home-band-light')
+        .first()
+        .evaluate((el) => getComputedStyle(el).backgroundColor),
+    ).toBe('rgb(242, 247, 244)');
+    await expect
+      .poll(() =>
+        page
+          .locator('.ecosystem-product-grid .product-screen img')
+          .first()
+          .evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0),
+      )
+      .toBe(true);
+  }
 });
 test('contact validates input and prepares a real email without claiming delivery', async ({
   page,
@@ -205,7 +232,10 @@ test('visual review captures and loaded assets', async ({ page }) => {
     await page.screenshot({ path: `.qa/${name}.png`, fullPage: true });
     await page.screenshot({ path: `.qa/${name}-viewport.png`, fullPage: false });
     if (name === 'home-desktop') {
-      await page.locator('.product-image').screenshot({ path: '.qa/product-frame.png' });
+      await page
+        .locator('.ecosystem-product-grid .product-screen')
+        .first()
+        .screenshot({ path: '.qa/product-frame.png' });
     }
   }
   expect(failed).toEqual([]);

@@ -1,10 +1,20 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ProductScreen } from './product-screen';
-import { ArrowUpRight, ArrowDownUp, Monitor, Smartphone, GraduationCap } from 'lucide-react';
+import {
+  ArrowUpRight,
+  ArrowDownUp,
+  Monitor,
+  Smartphone,
+  GraduationCap,
+  Apple,
+  Play,
+} from 'lucide-react';
 import { products, englishPageMeta, milestones } from '@/lib/ecosystem';
 import { localPath, type Locale } from '@/lib/site';
 import { Cta, ProductImage, TextLink } from './site-ui';
 import { CompanyNav, Team } from './team';
+import { ImaginAiStudyTools } from './imaginai-study-tools';
 
 function EnglishHero({ path, label }: { path: string; label: string }) {
   const meta = englishPageMeta[path];
@@ -89,8 +99,20 @@ export function EcosystemFeature() {
         </div>
         <div className="ecosystem-product-grid">
           {products.map((p, i) => (
-            <article key={p.path}>
-              {i === 0 ? <ProductImage locale="en" /> : <ProfVisual />}
+            <article
+              key={p.path}
+              className={`ecosystem-product-card ecosystem-product-card-${i + 1}`}
+            >
+              <div className="ecosystem-product-stage">
+                <span className="ecosystem-stage-index">
+                  0{i + 1} / {p.channel}
+                </span>
+                <span className="ecosystem-stage-status" aria-hidden="true">
+                  <i />
+                  IN USE
+                </span>
+                {i === 0 ? <ProductImage locale="en" /> : <ProfVisual />}
+              </div>
               <div className="ecosystem-product-copy">
                 <span className="eyebrow">
                   {p.channel} / {i === 0 ? 'LEARNERS' : 'INSTRUCTORS'}
@@ -211,7 +233,284 @@ export function CompanyOverview() {
     </>
   );
 }
+
+function ImaginAiConceptMedia({
+  src,
+  alt,
+  className = '',
+  priority = false,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+  priority?: boolean;
+}) {
+  return (
+    <figure className={`imaginai-concept-media ${className}`}>
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        priority={priority}
+        sizes="(max-width: 767px) 100vw, (max-width: 1100px) 92vw, 1240px"
+      />
+      <figcaption>Concept visualization · final campaign media pending</figcaption>
+    </figure>
+  );
+}
+
+function ImaginAiFeatureFrame({
+  src,
+  alt,
+  position = 'center',
+}: {
+  src: string;
+  alt: string;
+  position?: string;
+}) {
+  return (
+    <div className="imaginai-feature-frame">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 767px) 92vw, 42vw"
+        style={{ objectPosition: position }}
+      />
+    </div>
+  );
+}
+
+function PlaceholderQr() {
+  return (
+    <svg
+      className="imaginai-placeholder-qr"
+      viewBox="0 0 29 29"
+      role="img"
+      aria-labelledby="imaginai-qr-title imaginai-qr-description"
+    >
+      <title id="imaginai-qr-title">ImaginAi QR code placeholder</title>
+      <desc id="imaginai-qr-description">
+        Decorative non-scannable preview. The final application destination is pending.
+      </desc>
+      <rect width="29" height="29" rx="2" fill="#f7f8f8" />
+      <g fill="#08090b">
+        <path d="M2 2h8v8H2zm2 2v4h4V4zm15-2h8v8h-8zm2 2v4h4V4zM2 19h8v8H2zm2 2v4h4v-4z" />
+        <path d="M12 2h2v2h-2zm3 0h2v4h-2zm-3 4h2v2h-2zm3 2h2v3h-2zm-4 3h3v2h-3zm5 1h3v2h-3zm4 0h2v3h-2zm3 0h4v2h-4zm-21 0h3v2H2zm5 0h3v3H7zm-5 4h2v2H2zm3-1h3v2H5zm5 1h2v4h-2zm3-1h3v2h-3zm4 1h2v3h-2zm4 0h2v2h-2zm4 0h2v4h-2zm-13 4h2v2h-2zm3-1h3v3h-3zm4 2h2v2h-2zm3-1h3v2h-3zm-10 4h2v3h-2zm4 0h2v2h-2zm3 2h2v2h-2zm3-2h2v4h-2zm3 1h3v2h-3z" />
+      </g>
+    </svg>
+  );
+}
+
+function ImaginAiMobilePage() {
+  return (
+    <div className="imaginai-mobile-page">
+      <section className="imaginai-mobile-hero">
+        <div className="imaginai-mobile-hero-media">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcSet="/media/products/imaginai-mobile-hand.webp"
+            />
+            <Image
+              src="/media/generated/imaginai/imaginai-mobile-hero-concept.webp"
+              alt="ImaginAi mobile application presented in a product scene; the desktop scene is a concept visualization and the mobile composition is owner-approved."
+              fill
+              priority
+              sizes="100vw"
+            />
+          </picture>
+        </div>
+        <div className="container imaginai-mobile-hero-content">
+          <nav className="breadcrumbs" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span>/</span>
+            <Link href="/products">Products</Link>
+            <span>/</span>
+            <span>ImaginAi</span>
+          </nav>
+          <span className="imaginai-hero-concept-label">
+            Concept visualization · final campaign media pending
+          </span>
+          <div className="imaginai-mobile-hero-bottom">
+            <div className="imaginai-mobile-hero-copy">
+              <span className="eyebrow">
+                <span className="accent-dash" />
+                INTRODUCING IMAGINAI MOBILE
+              </span>
+              <span className="imaginai-mobile-audience">
+                Secondary &amp; higher-education learners
+              </span>
+              <h1>A learning companion built for the moments between lessons.</h1>
+              <p>
+                Move from a question to practice, corrections and the next useful step in one
+                focused mobile experience.
+              </p>
+              <a className="text-link imaginai-hero-learn-link" href="#imaginai-experience">
+                See how it works
+              </a>
+            </div>
+            <div className="imaginai-download-panel" aria-label="Download options preview">
+              <div className="imaginai-qr-card">
+                <div>
+                  <strong>Scan to access</strong>
+                  <span>Destination pending</span>
+                </div>
+                <PlaceholderQr />
+              </div>
+              <div className="imaginai-store-grid">
+                <button type="button" disabled aria-label="App Store link pending">
+                  <Apple size={21} aria-hidden="true" />
+                  <span>
+                    <small>Link pending</small>
+                    <strong>App Store</strong>
+                  </span>
+                </button>
+                <button type="button" disabled aria-label="Play Store link pending">
+                  <Play size={20} fill="currentColor" aria-hidden="true" />
+                  <span>
+                    <small>Link pending</small>
+                    <strong>Play Store</strong>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="imaginai-experience" className="container imaginai-mobile-intro">
+        <div className="imaginai-mobile-intro-copy">
+          <span className="eyebrow">BUILT FOR STUDY BEYOND THE CLASSROOM</span>
+          <h2>Learning support that stays within reach.</h2>
+          <p>
+            ImaginAi brings learning resources, AI support, practice and activity into a mobile
+            experience designed around the learner’s next action.
+          </p>
+        </div>
+        <div className="imaginai-intro-grid">
+          <article>
+            <ImaginAiFeatureFrame
+              src="/media/products/imaginai-mobile-hand.webp"
+              alt="ImaginAi mobile application displayed in the owner-approved hand-held product composition."
+              position="center 42%"
+            />
+            <h3>Made to travel</h3>
+            <p>Keep study tools available when the learning moment moves beyond a desk.</p>
+          </article>
+          <article>
+            <ImaginAiFeatureFrame
+              src="/media/products/imaginai-mobile-scene.webp"
+              alt="ImaginAi application displayed on a phone in the owner-approved dark product scene."
+            />
+            <h3>Focused by design</h3>
+            <p>Move between learning activity and useful tools without losing the thread.</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="imaginai-mobile-chapter imaginai-mobile-chapter-light">
+        <div className="container">
+          <div className="imaginai-chapter-heading">
+            <span className="eyebrow">01 / YOUR LEARNING RHYTHM</span>
+            <h2>Stay close to what deserves your attention.</h2>
+            <p>
+              See recent activity, goals and available learning actions from a home experience that
+              keeps the next step visible.
+            </p>
+          </div>
+          <ImaginAiConceptMedia
+            src="/media/generated/imaginai/imaginai-mobile-hand-concept.webp"
+            alt="Concept photograph of a learner holding a phone with the ImaginAi home interface."
+            className="imaginai-concept-hand"
+          />
+          <div className="imaginai-support-grid">
+            <article>
+              <ImaginAiFeatureFrame
+                src="/media/products/imaginai-mobile.png"
+                alt="Real ImaginAi product composition showing progress and learning tools."
+                position="32% center"
+              />
+              <h3>See progress at a glance</h3>
+              <p>Activity and goals create a clear point of return for the next study session.</p>
+            </article>
+            <article>
+              <ImaginAiFeatureFrame
+                src="/media/products/imaginai-mobile.png"
+                alt="Real ImaginAi product composition showing mobile learning tools."
+                position="72% center"
+              />
+              <h3>Choose the next action</h3>
+              <p>Open practice, learning resources or AI-assisted tools from one starting point.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="imaginai-mobile-chapter">
+        <div className="container">
+          <div className="imaginai-chapter-heading imaginai-chapter-heading-wide">
+            <span className="eyebrow">02 / STUDY TOOLS</span>
+            <h2>Move study forward, wherever the question starts.</h2>
+            <p>
+              Work through documents, exercises, voice interactions and translation within the
+              learner experience. The interface shown here is the current owner-supplied product UI.
+            </p>
+          </div>
+          <ImaginAiStudyTools />
+        </div>
+      </section>
+
+      <section className="imaginai-mobile-chapter imaginai-mobile-chapter-mint">
+        <div className="container imaginai-connected-layout">
+          <div>
+            <span className="eyebrow">03 / CONNECTED, DISTINCT</span>
+            <h2>A learner space connected to the teaching context.</h2>
+            <p>
+              ImaginAi serves learners on mobile. ImaginAi Prof gives instructors a separate web
+              workspace for classes, tasks and follow-up. Each experience keeps its own role clear.
+            </p>
+            <TextLink href="/products/imaginai-prof">Discover ImaginAi Prof</TextLink>
+          </div>
+          <div className="imaginai-connected-visual">
+            <Image
+              src="/media/products/imaginai-mobile.png"
+              width={1500}
+              height={1125}
+              alt="Owner-approved composition of real ImaginAi mobile screens."
+              sizes="(max-width: 767px) 100vw, 55vw"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="container imaginai-mobile-closing">
+        <span className="eyebrow">BUILT BY SYNAPSAI</span>
+        <h2>From a learning need to a product people can carry.</h2>
+        <p>
+          Explore the product and the strategy, design and engineering work behind the connected
+          ImaginAi ecosystem.
+        </p>
+        <div>
+          <a
+            className="button button-dark"
+            href="https://imaginai.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit ImaginAi
+            <ArrowUpRight size={17} />
+          </a>
+          <TextLink href="/work/imaginai">Read the case study</TextLink>
+        </div>
+      </section>
+    </div>
+  );
+}
+
 export function ProductDetail({ prof = false }: { prof?: boolean }) {
+  if (!prof) return <ImaginAiMobilePage />;
+
   const product = products[prof ? 1 : 0];
   const other = products[prof ? 0 : 1];
   return (

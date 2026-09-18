@@ -6,6 +6,11 @@ import { imaginaiArticle } from '../content/insights/inside-imaginai';
 import { connectivityArticle } from '../content/insights/connectivity';
 import { beyondDemoArticle } from '../content/insights/beyond-demo';
 import { classroomArticle } from '../content/insights/classroom';
+import { dailyUseArticle } from '../content/insights/daily-use';
+import { peopleNotEngineersArticle } from '../content/insights/people-not-engineers';
+import { emergingMarketsCostArticle } from '../content/insights/emerging-markets-cost';
+import { learningSystemArticle } from '../content/insights/learning-system';
+import { learningMeasurementArticle } from '../content/insights/learning-measurement';
 import { contextArticleFr } from '../content/insights/ai-for-africa-fr';
 
 export const insightCategories = [
@@ -16,6 +21,7 @@ export const insightCategories = [
   'Inside SynapsAi',
 ] as const;
 export const insightAuthors = { ceo: team[1], cto: team[0] };
+export const insightsDisplayLimit = 7;
 export type InsightEntry = {
   slug: string;
   title: string;
@@ -40,8 +46,14 @@ const slugs = {
   connectivity: 'building-ai-products-for-imperfect-connectivity',
   demo: 'beyond-the-ai-demo-building-useful-ai-products',
   classroom: 'what-we-learn-when-ai-meets-the-african-classroom',
+  dailyUse: 'what-makes-an-ai-product-worth-using-every-day',
+  peopleNotEngineers: 'designing-ai-for-people-who-dont-think-like-engineers',
+  emergingMarketsCost: 'the-hidden-cost-of-building-ai-products-in-emerging-markets',
+  learningSystem: 'from-assistant-to-learning-system-rethinking-ai-in-education',
+  learningMeasurement: 'what-we-measure-when-we-build-ai-for-learning',
 };
 type EntryInput = Omit<InsightEntry, 'locale' | 'updatedAt' | 'seo' | 'hero'> & {
+  updatedAt?: string;
   visual: string;
   alt: string;
   caption: string;
@@ -50,7 +62,7 @@ function entry({ visual, alt, caption, ...data }: EntryInput): InsightEntry {
   return {
     ...data,
     locale: 'en',
-    updatedAt: data.publishedAt || '2026-09-16',
+    updatedAt: data.updatedAt || data.publishedAt || '2026-09-16',
     hero: { src: `/media/insights/${visual}.svg`, alt, caption },
     seo: {
       title: data.title,
@@ -160,6 +172,105 @@ export const insights: InsightEntry[] = [
     relatedInsights: [slugs.imaginai, slugs.context],
     body: classroomArticle,
   }),
+  entry({
+    status: 'review',
+    updatedAt: '2026-09-18',
+    slug: slugs.dailyUse,
+    title: 'What Makes an AI Product Worth Using Every Day?',
+    subtitle:
+      'Beyond the first impressive answer: recurring utility, context, recovery and the work required to earn trust.',
+    description:
+      'Why daily AI adoption depends on a recurring job, appropriate context, clear control, dependable recovery and the total cost of the workflow.',
+    category: 'Perspectives',
+    tags: ['AI Products', 'Product Strategy', 'Trust', 'Adoption'],
+    authors: ['ceo'],
+    featured: false,
+    visual: 'daily-use',
+    alt: 'A four-step loop connects a recurring task, available context, a useful result and the next use.',
+    caption:
+      'Daily value is a loop of work and return, not a single response. Conceptual illustration by SynapsAi.',
+    relatedInsights: [slugs.demo, slugs.peopleNotEngineers, slugs.emergingMarketsCost],
+    body: dailyUseArticle,
+  }),
+  entry({
+    status: 'review',
+    updatedAt: '2026-09-18',
+    slug: slugs.peopleNotEngineers,
+    title: 'Designing AI for People Who Don’t Think Like Engineers',
+    subtitle:
+      'The interface should begin with a person’s work, language and judgment—not a model’s mechanics.',
+    description:
+      'How plain language, task-shaped controls and progressive onboarding make AI products more understandable and useful beyond technical teams.',
+    category: 'Perspectives',
+    tags: ['Product Design', 'AI UX', 'Inclusive Design', 'Onboarding'],
+    authors: ['ceo'],
+    featured: false,
+    visual: 'people',
+    alt: 'A path moves from a real task through clear choices to an assisted outcome, with technical mechanics kept in the background.',
+    caption: 'The task should lead the interface. Conceptual illustration by SynapsAi.',
+    relatedInsights: [slugs.dailyUse, slugs.context, slugs.demo],
+    body: peopleNotEngineersArticle,
+  }),
+  entry({
+    status: 'review',
+    updatedAt: '2026-09-18',
+    slug: slugs.emergingMarketsCost,
+    title: 'The Hidden Cost of Building AI Products in Emerging Markets',
+    subtitle:
+      'Inference is one line item. Access, operations, payments, support and dependency shape the whole product.',
+    description:
+      'Why economic and operating context should influence AI architecture, product discovery and the way teams reason about cost.',
+    category: 'Product & Engineering',
+    tags: ['AI Products', 'Emerging Markets', 'Product Engineering', 'Operations'],
+    authors: ['ceo'],
+    featured: false,
+    visual: 'costs',
+    alt: 'Four connected layers show access, experience, intelligence and operations as a product cost stack.',
+    caption:
+      'The operating environment is part of the system design. Conceptual illustration by SynapsAi.',
+    relatedInsights: [slugs.connectivity, slugs.dailyUse, slugs.context],
+    body: emergingMarketsCostArticle,
+  }),
+  entry({
+    status: 'review',
+    updatedAt: '2026-09-18',
+    slug: slugs.learningSystem,
+    title: 'From Assistant to Learning System: Rethinking AI in Education',
+    subtitle:
+      'A chatbot can answer a question. A learning system has to support the attempt, the feedback, the return and the teacher.',
+    description:
+      'Why educational AI should be designed around learning tasks, meaningful effort, feedback, educator judgment and careful evaluation.',
+    category: 'Field Notes',
+    tags: ['Education', 'AI Products', 'Learning Design', 'Teachers'],
+    authors: ['ceo'],
+    featured: false,
+    visual: 'learning-system',
+    alt: 'A learning sequence links task, attempt, feedback and revisit around a teacher-guided system.',
+    caption:
+      'Learning support has a sequence beyond a chat response. Conceptual illustration by SynapsAi.',
+    relatedInsights: [slugs.classroom, slugs.imaginai, slugs.learningMeasurement],
+    body: learningSystemArticle,
+  }),
+  entry({
+    status: 'review',
+    updatedAt: '2026-09-18',
+    slug: slugs.learningMeasurement,
+    title: 'What We Measure When We Build AI for Learning',
+    subtitle:
+      'Activity is visible. Learning is harder to establish. A useful measurement practice knows the difference.',
+    description:
+      'A field-notes framework for distinguishing engagement from learning evidence, reviewing AI quality and improving educational products responsibly.',
+    category: 'Field Notes',
+    tags: ['Education', 'Learning Analytics', 'AI Evaluation', 'Field Notes'],
+    authors: ['ceo'],
+    featured: false,
+    visual: 'measurement',
+    alt: 'A circular evidence loop connects a question, minimum evidence, human review and an improved next test.',
+    caption:
+      'Measurement should improve the next decision, not manufacture a result. Conceptual illustration by SynapsAi.',
+    relatedInsights: [slugs.learningSystem, slugs.classroom, slugs.demo],
+    body: learningMeasurementArticle,
+  }),
 ];
 export const frenchInsights: InsightEntry[] = [
   {
@@ -208,6 +319,17 @@ export function availableInsights(isPublicSite: boolean) {
   return insights.filter(
     (e) => e.status === 'published' || (!isPublicSite && ['review', 'approved'].includes(e.status)),
   );
+}
+export function splitInsightsForIndex(entries: InsightEntry[]) {
+  const ordered = [...entries].sort((a, b) => {
+    const aDate = a.publishedAt || a.updatedAt;
+    const bDate = b.publishedAt || b.updatedAt;
+    return bDate.localeCompare(aDate);
+  });
+  return {
+    current: ordered.slice(0, insightsDisplayLimit),
+    archive: ordered.slice(insightsDisplayLimit),
+  };
 }
 export function insightsNavigationVisible(isPublicSite: boolean) {
   return availableInsights(isPublicSite).length >= (isPublicSite ? 3 : 1);

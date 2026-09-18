@@ -6,7 +6,6 @@ import { Home } from '@/components/home';
 import { Interior, pageTitle, pageDescription } from '@/components/interior';
 import { copy, localPath, publicPaths, resolveRoute, site, published } from '@/lib/site';
 import {
-  availableInsights,
   availableInsightsForLocale,
   insightPaths,
   insightPathsForLocale,

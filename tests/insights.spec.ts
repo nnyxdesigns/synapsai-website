@@ -8,6 +8,8 @@ import {
   insightPaths,
   insights,
   insightAuthors,
+  insightsDisplayLimit,
+  splitInsightsForIndex,
 } from '../src/lib/insights';
 
 async function loadVisibleMedia(page: import('@playwright/test').Page) {
@@ -32,9 +34,18 @@ test('curated index, navigation and previous article URL', async ({ page, reques
     .click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Insights.');
   await expect(page.locator('.insight-feature')).toHaveCount(1);
-  await expect(page.locator('.insights-library .insight-card')).toHaveCount(4);
+  await expect(page.locator('.insights-library .insight-card')).toHaveCount(
+    insightsDisplayLimit - 1,
+  );
   for (const article of insights)
     await expect(page.getByRole('heading', { name: article.title, exact: true })).toHaveCount(1);
+  const { archive } = splitInsightsForIndex(insights);
+  await expect(page.getByRole('heading', { name: 'Archive', exact: true })).toBeVisible();
+  await expect(page.locator('.insights-archive-list li')).toHaveCount(archive.length);
+  for (const article of archive)
+    await expect(
+      page.locator(`.insights-archive-list a[href="/insights/${article.slug}"]`),
+    ).toHaveCount(1);
   await page.getByRole('link', { name: 'Read the article', exact: true }).click();
   await expect(page).toHaveURL(`/insights/${insights[0].slug}`);
   const redirect = await request.get('/insights/ai-for-africa-designed-for-context', {
@@ -54,10 +65,10 @@ test('curated index, navigation and previous article URL', async ({ page, reques
   await expect(page).toHaveURL('/insights');
 });
 
-test('approved articles are available publicly while staging stays out of the sitemap', async ({
+test('review articles remain staging-only while approved articles are publicly eligible', async ({
   request,
 }) => {
-  expect(availableInsights(false)).toHaveLength(5);
+  expect(availableInsights(false)).toHaveLength(10);
   expect(insightsNavigationVisible(false)).toBe(true);
   expect(availableInsights(true)).toHaveLength(5);
   expect(insightPaths(true)).toHaveLength(6);
@@ -69,6 +80,14 @@ test('approved articles are available publicly while staging stays out of the si
   }
   expect((await request.get(`/fr/insights/${insights[0].slug}`)).status()).toBe(200);
   expect((await request.get(`/fr/insights/${insights[1].slug}`)).status()).toBe(404);
+});
+
+test('the Insights index keeps no more than seven current entries and preserves older entries in Archive', () => {
+  const overflow = [...insights, { ...insights[0], slug: 'archive-test-entry' }];
+  const { current, archive } = splitInsightsForIndex(overflow);
+  expect(current).toHaveLength(insightsDisplayLimit);
+  expect(archive).toHaveLength(4);
+  expect(archive.some((entry) => entry.slug === 'archive-test-entry')).toBe(true);
 });
 
 for (const [index, article] of insights.entries()) {
@@ -124,7 +143,7 @@ for (const [index, article] of insights.entries()) {
     } else {
       await expect(page.locator('link[hreflang="fr"], a[href^="/fr"]')).toHaveCount(0);
     }
-    await expect(page.locator('.review-badge')).toHaveCount(0);
+    await expect(page.locator('.review-badge')).toHaveCount(article.status === 'published' ? 0 : 1);
     const schema = JSON.parse(
       (await page.locator('.insight-article script[type="application/ld+json"]').textContent())!,
     );
@@ -235,7 +254,7 @@ test('Insights categories, search and Press work with keyboard and on mobile', a
     await expect(page.locator('.insight-feature')).toHaveCount(0);
     await expect(page.locator('.insights-library .insight-card')).toHaveCount(1);
     const search = page.getByRole('searchbox', { name: 'Search insights and press' });
-    await search.fill('connectivity');
+    await search.fill('emerging markets');
     await expect(page.locator('.insights-library .insight-card')).toHaveCount(1);
     await search.fill('no-such-story');
     await expect(page.getByRole('heading', { name: 'No matching stories.' })).toBeVisible();

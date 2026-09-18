@@ -63,6 +63,54 @@ test('Home connects two products, evidence and three real Insights', async ({ pa
   await expect(page.locator('.impact-history li')).toHaveCount(5);
 });
 
+test('ImaginAi Study Tools changes visual by hover, click, touch and keyboard', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto('/products/imaginai');
+  const tabs = page.getByRole('tab');
+  const panel = page.locator('.imaginai-study-stage');
+  await expect(tabs).toHaveCount(4);
+  await expect(tabs.first()).toHaveAttribute('aria-selected', 'true');
+  await expect(panel.locator('img.is-active')).toHaveAttribute('alt', /document analysis/i);
+
+  const practice = page.getByRole('tab', { name: /Practise and revisit/ });
+  await practice.hover();
+  await expect(practice).toHaveAttribute('aria-selected', 'true');
+  await expect(panel.locator('img.is-active')).toHaveAttribute('alt', /practice question/i);
+
+  const voice = page.getByRole('tab', { name: /Use voice when it helps/ });
+  await voice.click();
+  await expect(panel.locator('img.is-active')).toHaveAttribute('alt', /voice-learning/i);
+  await voice.press('ArrowRight');
+  const translation = page.getByRole('tab', { name: /Move across languages/ });
+  await expect(translation).toBeFocused();
+  await expect(translation).toHaveAttribute('aria-selected', 'true');
+  await expect(panel.locator('img.is-active')).toHaveAttribute('alt', /translation interface/i);
+  await expect
+    .poll(() =>
+      panel
+        .locator('img.is-active')
+        .evaluate(
+          (image) =>
+            (image as HTMLImageElement).complete &&
+            (image as HTMLImageElement).naturalWidth > 0,
+        ),
+    )
+    .toBe(true);
+  await panel.scrollIntoViewIfNeeded();
+  await page.screenshot({ path: '.qa/imaginai-study-tools-interaction.png' });
+
+  await page.setViewportSize({ width: 390, height: 900 });
+  await page.goto('/products/imaginai');
+  // A mobile tap activates the same button click handler; the shared test context has no touch device.
+  await page.getByRole('tab', { name: /Use voice when it helps/ }).click();
+  await expect(page.locator('.imaginai-study-stage img.is-active')).toHaveAttribute(
+    'alt',
+    /voice-learning/i,
+  );
+});
+
 test('validated social and team links; pending routes remain unavailable', async ({
   page,
   request,

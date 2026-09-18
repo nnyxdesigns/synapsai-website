@@ -1455,16 +1455,19 @@ Legal
 Potential items:
 
 ### Solutions
+
 - AI & Automation
 - Custom Software
 - Web & Mobile
 - Digital Transformation
 
 ### Products
+
 - ImaginAi
 - additional future products
 
 ### Company
+
 - About
 - Team
 - Work
@@ -1473,11 +1476,13 @@ Potential items:
 - Careers when available
 
 ### Resources
+
 - Insights when active
 - FAQ
 - Press when active
 
 ### Legal
+
 - Privacy
 - Terms
 - Cookies if required
@@ -1814,6 +1819,7 @@ Time-sensitive metrics should not become permanent hard-coded decorative assets 
 The recommended sequence from this point is:
 
 ## Phase 1 — Information architecture
+
 - finalize sitemap;
 - resolve route naming;
 - decide launch vs future pages;
@@ -1821,6 +1827,7 @@ The recommended sequence from this point is:
 - define internal linking.
 
 ## Phase 2 — Copywriting
+
 English first:
 
 - Homepage;
@@ -1836,6 +1843,7 @@ English first:
 French adaptation second.
 
 ## Phase 3 — Content model
+
 Define schemas for:
 
 - pages;
@@ -1847,9 +1855,11 @@ Define schemas for:
 - awards.
 
 ## Phase 4 — Design system
+
 Define the complete UI/visual foundation.
 
 ## Phase 5 — Visual asset direction
+
 - product screenshots;
 - mockups;
 - diagrams;
@@ -1858,9 +1868,11 @@ Define the complete UI/visual foundation.
 - photography selection.
 
 ## Phase 6 — Implementation
+
 Codex builds against approved specs.
 
 ## Phase 7 — QA
+
 - responsive;
 - copy;
 - accessibility;
@@ -1872,6 +1884,7 @@ Codex builds against approved specs.
 - content validity.
 
 ## Phase 8 — Content expansion
+
 - Insights;
 - client case studies;
 - press;
@@ -1999,12 +2012,21 @@ Before implementing or modifying a major page or system:
 
 **APPROVED newer Insights direction:** reorganize the English index after Linear Now with functioning category tabs and a Press category. This supersedes the earlier decision to defer filters. Prepare Press for owner-supplied YouTube links without inventing entries or publication dates.
 
-
 ## 2026-09-16 ? Three-column Insights and populated Press
 
 The owner approved retaining the featured article, showing following articles in three desktop columns, and matching Linear Now Press with thumbnail cards in four desktop columns. All previews four videos and View all selects Press with all eight supplied videos. Tablet uses two columns and mobile one. Video titles, channel and thumbnails were verified through YouTube oEmbed; original publication dates came from the public watch-page metadata. English display titles adapt the originals, retained in the registry for search and provenance. Local thumbnail assets avoid third-party requests until a visitor follows a video link. No video iframe or autoplay is loaded.
 
 _End of current source of truth._
+
+## 2026-09-18 - English homepage visual rhythm
+
+**APPROVED direction from owner feedback:** improve the English homepage's sales clarity and visual energy without removing useful content. Alternate dark technical surfaces with light white/mint sections so the page has a clearer rhythm and stronger visual hierarchy.
+
+- The English homepage opens with the existing SynapsAi systems visual; real ImaginAi and ImaginAi Prof compositions remain in the dedicated ecosystem showcase below.
+- Proof points use a light surface; capabilities remain dark; the ImaginAi ecosystem uses a light product showcase with generous vertical spacing; real-world problems remain dark; the approach section uses a light surface with generous vertical spacing; recognition and Insights return to dark.
+- Existing approved copy, metrics, product boundaries and evidence remain unchanged. No new claims, customers, testimonials or outcomes were added.
+- The supplied ImaginAi and ImaginAi Prof media are used as product evidence. Generated or conceptual visuals remain subject to the media provenance rules.
+- This is an English-only homepage iteration. The French homepage keeps its existing structure and copy for later review; shared brand styles may still affect common components.
 
 ## 2026-09-16 ? SEO and supplied brand assets
 
@@ -2013,3 +2035,29 @@ Approved: apply synapsai-seo-discoverability-social-sharing-requirements.md to a
 ## Owner approval ? first five English Insights
 
 The owner explicitly approved publication of all five review articles. Their individual status is now published, making them eligible for production navigation and the production sitemap. SITE_PUBLISHED remains false until deployment preparation is complete. No public deployment occurred. Publication dates remain unset until the actual first public release; approval is not a fabricated publication timestamp. Future articles must receive their own explicit status and approval.
+
+## 2026-09-18 — Additional English Insights (editorial review)
+
+**Owner-requested scope:** add five further original English Insights, kept in `review` until the owner explicitly approves publication. No French articles, French listing entries, French metadata alternates, sitemap entries or deployment are authorised by this request.
+
+- **What Makes an AI Product Worth Using Every Day?** — Product / Strategy.
+- **Designing AI for People Who Don’t Think Like Engineers** — Product Design / Perspective.
+- **The Hidden Cost of Building AI Products in Emerging Markets** — Engineering / Business.
+- **From Assistant to Learning System: Rethinking AI in Education** — Education / Product.
+- **What We Measure When We Build AI for Learning** — Data / Field Notes.
+
+The content must remain clear about the boundary between original recommendations, external evidence and verified SynapsAi facts. It must not invent product results, learning metrics, clients, deployments, providers, commercial terms or field research. Conceptual editorial visuals are permitted, provided they are labelled as such and recorded in `public/media/manifest.json`. The measurement article may later receive real ImaginAi charts only after the underlying data, definitions, population, time period and publication approval are documented.
+
+## 2026-09-18 — Insights archive
+
+**Owner-requested direction:** the English Insights index keeps at most seven current editorial cards. Once the collection exceeds that limit, older entries move into a compact **Archive** section at the bottom of the page, inspired by the information hierarchy of Linear Now but implemented with SynapsAi-specific styling and copy. Archive entries remain publicly readable at their existing canonical URLs; no content is removed, hidden from search engines when published, or assigned a replacement URL. The archive is deliberately a concise link list rather than an additional card grid, so the current collection never exceeds seven cards. English only; no French archive work is authorised.
+
+## 2026-09-18 - Product mockup visual prototype
+
+The English homepage ecosystem section now uses a Linear Mobile-inspired visual treatment: real ImaginAi and ImaginAi Prof screenshots sit in framed product stages with perspective, grid details, status labels and restrained floating motion. The treatment is SynapsAi-specific and does not reproduce Linear assets or copy. Motion respects reduced-motion preferences. Future approved product imagery can replace the current media without changing the component structure.
+
+## 2026-09-18 - ImaginAi mobile product page
+
+**APPROVED by the owner:** rebuild the English `/products/imaginai` page around the composition and visual pacing of Linear Mobile, then adapt every section to the ImaginAi interface and SynapsAi brand. The page uses a large product hero, paired editorial visuals, full-width feature chapters, compact capability blocks and a connected-product conclusion. `/products/imaginai-prof` remains unchanged.
+
+The owner supplied the current ImaginAi mobile home screen and explicitly authorized temporary fictional presentation imagery. Generated smartphone scenes may use that interface as a reference, but must remain visibly labelled as concept visualizations and replaceable when final campaign assets arrive. They cannot be presented as real users, released hardware, customer evidence or measured results. Existing owner-approved product compositions remain the factual UI reference. This iteration is English only.

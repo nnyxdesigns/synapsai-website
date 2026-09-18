@@ -103,3 +103,31 @@ Share article now always opens the inline sharing options. Native OS sharing is 
 ## French rollout
 
 The first French rollout lots are implemented locally for `/fr`, `/fr/solutions`, the four solution details, products, work, company, FAQ, contact, Impact, Careers and the first Insights article. Remaining French Insights articles stay gated until their copy is approved. See [french-rollout.md](french-rollout.md) and [french-p0-qa.md](french-p0-qa.md).
+
+## English homepage visual rhythm — 2026-09-18
+
+The English homepage now uses alternating dark technical and light white/mint bands. The hero keeps the SynapsAi systems diagram clear; the real ImaginAi and ImaginAi Prof compositions remain in the dedicated ecosystem showcase. The light bands carry proof points, the product ecosystem showcase and the approach narrative with increased vertical spacing; dark bands carry capabilities, real-world problems, recognition and Insights. The French homepage keeps its previous structure for the later localization pass.
+
+## English ImaginAi mobile product story — 2026-09-18
+
+`/products/imaginai` now uses a long-form mobile product narrative inspired by the visual hierarchy of Linear Mobile: a large product hero, a two-up introduction, full-width feature chapters, supporting image pairs, a four-item tool grid and a closing product CTA. The copy and visual identity remain specific to ImaginAi and SynapsAi. Two generated product-photography concepts use the owner-supplied ImaginAi home screen as reference and are explicitly labelled as concept visualizations on the page; owner-approved product compositions remain the factual UI source. `/products/imaginai-prof` retains its previous structure. This iteration is English only.
+
+The display-title scale was subsequently reduced to align with the English homepage hierarchy: the product hero now caps at 72px, chapter titles at 54–58px, and mobile section titles at 34px.
+
+The hero now treats the ImaginAi product scene as a full-width background rather than a separate card. Horizontal and vertical gradients protect the copy while keeping the application interface visible. Its lower layout pairs the product narrative with a deliberately non-scannable QR preview and disabled App Store/Play Store controls labelled as pending. Desktop uses the generated campaign concept; mobile switches through a single responsive picture element to the owner-approved hand-held composition. Real store destinations and the final QR must replace these placeholders before activation.
+
+The hero height was then reduced by approximately 15% across desktop, tablet and mobile so the product title enters the viewport sooner without changing the content hierarchy.
+
+## Insights archive
+
+`splitInsightsForIndex()` orders available English entries by publication date (or real revision date), retains the seven newest in the current collection, and sends remaining entries to a compact Archive list. The list preserves direct canonical links, category and date metadata without adding another card grid. The archive affects neither article routes nor publication/sitemap policy.
+
+## Additional English Insights — 2026-09-18
+
+Five original English editorial entries were added to the typed Insights registry and are deliberately `review` only: daily-use AI product value, AI interfaces for non-engineers, AI product costs in emerging markets, learning systems beyond chat, and learning-product measurement. They have no French routes or alternates. `availableInsights(true)` retains only the five owner-approved entries, so the new drafts are excluded from production navigation and the production sitemap until separately approved.
+
+Each entry has a unique canonical, description, Article metadata, source notes, internal related reading, conceptual SVG cover, mobile cover and 1200×630 Open Graph image. The expanded media scripts regenerate the local artwork and wordmarked social previews; provenance is registered in `public/media/manifest.json`. The visuals are original conceptual diagrams, explicitly not product UI, user data or evidence of deployed results.
+
+The Study Tools chapter now pairs the product image on the left with the four capability cards on the right in a 2×2 grid. Both desktop columns stretch to the same height; tablet and mobile retain a readable stacked layout.
+
+Study Tools is now an interactive client component. Hover, click, focus and touch select a capability and crossfade the matching concept mockup without resizing the layout. The cards use tab semantics, roving focus, arrow/Home/End keyboard controls and a visible selected state. Reduced-motion removes the crossfade through the shared motion preference rule. Four generated concept mockups are temporary, visibly labelled and recorded in the media manifest.

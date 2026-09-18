@@ -10,7 +10,7 @@ test('publication policy excludes staging and review routes from the sitemap', (
   expect(urls.length).toBe(new Set(urls).size);
   expect(urls).toContain('https://synapsai.co/products/imaginai-prof');
   expect(urls).not.toContain('https://synapsai.co/fr/products/imaginai-prof');
-  expect(urls.filter((url) => url.includes('/insights/'))).toHaveLength(5);
+  expect(urls.filter((url) => url.startsWith('https://synapsai.co/insights/'))).toHaveLength(5);
   expect(urls.every((url) => url.startsWith('https://synapsai.co'))).toBe(true);
 });
 
