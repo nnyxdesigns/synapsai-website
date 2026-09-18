@@ -1,4 +1,4 @@
-# QA — 2026-09-16
+﻿# QA â€” 2026-09-16
 
 ## Environment
 
@@ -27,13 +27,13 @@
 
 Screenshots generated in `.qa/` (local, excluded from version control):
 
-- `home-desktop.png` — 1440px, complete homepage.
-- `home-mobile.png` — 390px, English homepage.
-- `home-french-mobile.png` — 390px, French homepage.
-- `solutions-desktop.png` — 1440px, solutions directory.
-- `contact-mobile.png` — 390px, French contact page.
-- `team-desktop.png` — 1440px, team page.
-- `team-mobile.png` — 390px, French team page.
+- `home-desktop.png` â€” 1440px, complete homepage.
+- `home-mobile.png` â€” 390px, English homepage.
+- `home-french-mobile.png` â€” 390px, French homepage.
+- `solutions-desktop.png` â€” 1440px, solutions directory.
+- `contact-mobile.png` â€” 390px, French contact page.
+- `team-desktop.png` â€” 1440px, team page.
+- `team-mobile.png` â€” 390px, French team page.
 - Matching `*-viewport.png` captures are also available.
 
 Dark desktop home, French mobile home, mobile contact and both team layouts were inspected directly. All website surfaces are dark; official product UI remains faithful to its source. The real mobile composition was subsequently adjusted to use contain sizing after visual review revealed clipping. Production build, TypeScript and lint passed after that adjustment. The requested targeted browser rerun was blocked by automatic approval review because its usage quota was exhausted; therefore the final image framing still needs visual rechecking. The 8 passing browser scenarios and saved screenshots describe the version immediately before this last framing adjustment.
@@ -58,7 +58,7 @@ These results cover the English Insights iteration. Earlier bilingual checks and
 - Final production build, TypeScript and ESLint: passed.
 - **26 distinct English browser scenarios validated** across the two targeted suites: 13 Insights scenarios and 13 IA scenarios. The combined initial run passed 24/25; the remaining test expected a trailing slash that Next.js correctly omits on the root canonical. After fixing that test assertion, it passed with two repeated technical-article visual checks (3/3). The subsequently differentiated Company page and English route audit passed together (2/2).
 - All 17 English corporate routes returned 200 with one H1, distinct titles, English document language, correct canonicals and implemented internal destinations. All five article routes passed their dedicated content/metadata tests; index navigation and the old article URL's 308 redirect passed.
-- Home exposes two distinct product entries, three real article previews and recognition navigation. The learner → Prof → case study → Impact journey passed. Team and footer links match the exact owner-validated URLs and include safe external-link attributes.
+- Home exposes two distinct product entries, three real article previews and recognition navigation. The learner â†’ Prof â†’ case study â†’ Impact journey passed. Team and footer links match the exact owner-validated URLs and include safe external-link attributes.
 - English-only Prof/Impact metadata and sitemap entries do not invent French alternates. Missing French equivalents and unpublished legal routes correctly return 404. Existing French pages were not rewritten or subjected to a full French QA pass.
 - All five articles passed body/source integrity, bylines, tags, takeaways, related-content navigation, Article/Person schema, PNG social previews, noindex and review-state checks.
 - Overflow checks passed at 320, 390, 768 and 1440px on Home, Products, both product details, the case study, Company, Impact, Solutions, digital transformation and Team. Insights index/articles additionally passed at 1024px.
@@ -102,7 +102,7 @@ Production build, ESLint and TypeScript passed. Four targeted browser scenarios 
 
 Final confirmation: the three SEO scenarios passed after the last build; ESLint and TypeScript also passed. The distinct scenario count across this iteration is 31.
 
-## English article publication approval — 2026-09-17
+## English article publication approval â€” 2026-09-17
 
 All five articles now have an explicit published status following owner approval. Build and SEO asset checks passed; prior lint and TypeScript checks passed. Nine targeted scenarios validated public eligibility, staging exclusion, production sitemap inclusion, article content/metadata/links, and responsive index accessibility. The five article tests were updated to expect no review badge and passed on rerun. The refreshed desktop index screenshot was inspected. Actual publication dates remain unset until first public deployment. SITE_PUBLISHED remains false; no Firebase deployment occurred.
 
@@ -149,10 +149,19 @@ The hero was then shortened by about 15% at each responsive tier. Build, lint, T
 
 The earlier archive verification passed for the initial ten-entry limit. The seven-entry adjustment retains the same partition and browser assertions, now expecting seven current entries and three archived ones in the current collection. ESLint and SEO asset checks pass. Final TypeScript, production-build and browser verification are pending resolution of an unrelated local TypeScript error in `tests/ia.spec.ts` (`naturalWidth` is read from a locator inferred as `SVGElement | HTMLElement`). No French archive rollout or Firebase deployment was performed.
 
-## Additional English Insights — 2026-09-18
+## Additional English Insights â€” 2026-09-18
 
 TypeScript, ESLint, the SEO asset check and the production build passed. Focused Playwright checks passed for the five new articles: content, internal links, canonical/article metadata, social image delivery, review status, source references and production sitemap exclusion (six checks), plus responsive 320/390/768/1024/1440px, reduced-motion, axe, media-loading and screenshot coverage (five checks). A 390px full-page capture of the learning-measurement article was inspected at `.qa/insights-v1-10-390.png`; the dedicated social card was also inspected. No French adaptation or Firebase deployment was performed.
 
-The Study Tools chapter was reorganized into a same-height desktop split: product image left and four capability cards right in a 2×2 grid. Build, lint, TypeScript, SEO and the focused four-width Playwright scenario passed. The refreshed 1440px full-page capture was inspected; tablet and mobile fall back to the existing stacked responsive treatment without overflow or accessibility violations.
+The Study Tools chapter was reorganized into a same-height desktop split: product image left and four capability cards right in a 2Ã—2 grid. Build, lint, TypeScript, SEO and the focused four-width Playwright scenario passed. The refreshed 1440px full-page capture was inspected; tablet and mobile fall back to the existing stacked responsive treatment without overflow or accessibility violations.
 
 The interactive Study Tools pass added four generated concept mockups and a client-side tab interaction. The dedicated Playwright scenario passed hover, click, keyboard arrow navigation, selected-state changes, active-image loading and the mobile activation path. The selected translation state was inspected in `.qa/imaginai-study-tools-interaction.png`. Build, SEO, TypeScript, ESLint and the responsive/accessibility scenario also passed.
+## Firebase deployment — v0.2.0 — 2026-09-18
+
+- Production build: passed with `npm run build:production`; SEO checks passed for 19 strategic routes.
+- Firebase Hosting site `synpasaico` in project `imaginai-f4fca`: deployed and released successfully.
+- Firebase version: `eb18816f7e494dde`; live release: `1789760669591000`.
+- Public smoke checks: `/`, `/insights`, `/products/imaginai`, `/robots.txt` and `/sitemap.xml` returned HTTP 200.
+- Legacy Insights slug returned HTTP 301 to the current article URL.
+- The production build uses `SITE_PUBLISHED=true`; review-only articles remain excluded from public navigation and sitemap.
+

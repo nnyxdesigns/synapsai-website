@@ -1,6 +1,6 @@
-# Firebase Hosting
+﻿# Firebase Hosting
 
-**Live:** https://synapsai.co — latest deployment 2026-09-17 at 21:48 Africa/Douala (20:48:18 UTC). The deployed version is `sites/synpasaico/versions/244bce41bfa2c907`; the previous release remains available for rollback. Four targeted post-deployment browser checks passed on the public domain; see [launch QA](firebase-launch-qa.md).
+**Live:** https://synapsai.co — v0.2.0 deployed 2026-09-18 at 21:44 Africa/Douala (19:44 UTC). Firebase version `eb18816f7e494dde`; live release `1789760669591000`. Public route checks passed after deployment.
 
 Production target verified on 2026-09-17:
 
@@ -77,3 +77,4 @@ Release: `sites/synpasaico/releases/1788254948844000`, 2026-09-01 09:29:08 UTC.
 Use Hosting release history in the Firebase console, select **synpasaico**, then roll back to this release if needed. The original site used a catch-all rewrite to `/index.html`.
 
 Reference: [Firebase Hosting configuration](https://firebase.google.com/docs/hosting/full-config).
+
