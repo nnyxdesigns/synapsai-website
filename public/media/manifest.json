@@ -739,6 +739,36 @@
       "kind": "optimized-official-portrait",
       "status": "review",
       "use": "Insights author avatar"
+    },
+    {
+      "file": "generated/home/home-team-hero-concept.png",
+      "source": "OpenAI built-in image generation; fictional product team scene",
+      "reviewedAt": "2026-09-19",
+      "generatedAt": "2026-09-19",
+      "kind": "generated-editorial-concept",
+      "status": "local-review",
+      "use": "English homepage hero visual; fictional people and conceptual scene, not a SynapsAi team photograph",
+      "prompt": "Cinematic photorealistic editorial scene of a fictional African product team collaborating around an AI product concept, dark studio workspace, mint edge light, wide composition with negative space on the left, no logos or readable text."
+    },
+    {
+      "file": "generated/home/home-learning-context-concept.png",
+      "source": "OpenAI built-in image generation; fictional learner and mentor scene",
+      "reviewedAt": "2026-09-19",
+      "generatedAt": "2026-09-19",
+      "kind": "generated-editorial-concept",
+      "status": "local-review",
+      "use": "English homepage context section; fictional learning scene, not a SynapsAi study or customer photograph",
+      "prompt": "Realistic documentary-style scene of a fictional African university student using a smartphone and notebook with a fictional mentor around a study exercise, warm learning space, no logos or readable text."
+    },
+    {
+      "file": "generated/home/home-network-concept.png",
+      "source": "OpenAI built-in image generation; conceptual technical system map",
+      "reviewedAt": "2026-09-19",
+      "generatedAt": "2026-09-19",
+      "kind": "generated-editorial-concept",
+      "status": "local-review",
+      "use": "English homepage approach visual; abstract system map, not product data or infrastructure evidence",
+      "prompt": "Refined abstract 3D visualization of connected product layers: a luminous mint core linked by thin lines to modular blocks representing people, context, workflow and learning, near-black background, no labels or logos."
     }
   ]
 }

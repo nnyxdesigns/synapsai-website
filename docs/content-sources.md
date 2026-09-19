@@ -51,6 +51,18 @@ The owner-supplied `synapsai-codex-ia-reconciliation-v2.md` validates the distin
 | Three team LinkedIn profiles | Owner supplied exact URLs, also corroborated by the company LinkedIn page                                                                                                 | Direct person-profile links, no new credentials                                                                       |
 | X/Twitter                    | Owner supplied an SVG icon asset only                                                                                                                                     | No profile link until an actual account URL is supplied                                                               |
 
+## Owner-requested English homepage proof refresh - 2026-09-19
+
+The owner requested that the English homepage use `+145K users impacted` and identify the
+Mastercard Foundation-supported GHSS Youth Innovation Challenge (GHSS-YIC) recognition in 2026
+instead of the previous PROMEX 2025 proof point. This update is limited to the English homepage;
+French copy and the detailed Impact/Work evidence remain unchanged until their own content review.
+
+The owner also requested a Microsoft for Startups reference. The homepage uses the provisional
+wording `Powered by Microsoft for Startups` for local review only. The pending evidence register
+still requires the program/beneficiary record, entity and period before this wording can be treated
+as launch-ready proof.
+
 The similar LinkedIn company at `synaps-artificial-intelligence` belongs to a different business and is not used. The old ImaginAi About page's generic LinkedIn buttons are replaced only with the now owner-validated URLs.
 
 ## Pending evidence register — not rendered

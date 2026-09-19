@@ -2022,7 +2022,7 @@ _End of current source of truth._
 
 **APPROVED direction from owner feedback:** improve the English homepage's sales clarity and visual energy without removing useful content. Alternate dark technical surfaces with light white/mint sections so the page has a clearer rhythm and stronger visual hierarchy.
 
-- The English homepage opens with the existing SynapsAi systems visual; real ImaginAi and ImaginAi Prof compositions remain in the dedicated ecosystem showcase below.
+- The English homepage opens with a fictional team concept scene as a full-bleed background; real ImaginAi and ImaginAi Prof compositions remain in the dedicated ecosystem showcase below.
 - Proof points use a light surface; capabilities remain dark; the ImaginAi ecosystem uses a light product showcase with generous vertical spacing; real-world problems remain dark; the approach section uses a light surface with generous vertical spacing; recognition and Insights return to dark.
 - Existing approved copy, metrics, product boundaries and evidence remain unchanged. No new claims, customers, testimonials or outcomes were added.
 - The supplied ImaginAi and ImaginAi Prof media are used as product evidence. Generated or conceptual visuals remain subject to the media provenance rules.
@@ -2061,3 +2061,19 @@ The English homepage ecosystem section now uses a Linear Mobile-inspired visual 
 **APPROVED by the owner:** rebuild the English `/products/imaginai` page around the composition and visual pacing of Linear Mobile, then adapt every section to the ImaginAi interface and SynapsAi brand. The page uses a large product hero, paired editorial visuals, full-width feature chapters, compact capability blocks and a connected-product conclusion. `/products/imaginai-prof` remains unchanged.
 
 The owner supplied the current ImaginAi mobile home screen and explicitly authorized temporary fictional presentation imagery. Generated smartphone scenes may use that interface as a reference, but must remain visibly labelled as concept visualizations and replaceable when final campaign assets arrive. They cannot be presented as real users, released hardware, customer evidence or measured results. Existing owner-approved product compositions remain the factual UI reference. This iteration is English only.
+
+## 2026-09-19 - English homepage visual enrichment
+
+**Owner-requested direction:** make the English homepage more vivid and persuasive by introducing realistic, contextual and technical visuals while preserving the existing approved copy, claims and dark/light rhythm.
+
+- The “Connected by design” systems visual is removed from the hero; the fictional team concept scene now fills the hero background with a clear concept-visual label.
+- A new context section pairs a fictional learner-and-mentor scene with concise product-design principles.
+- The approach section adds a conceptual system-map image behind the existing SynapsAi symbol animation.
+- All three new images are generated concepts, not team portraits, customer evidence, product data or measured outcomes. Their provenance is recorded in `public/media/manifest.json`.
+- This iteration changes the English homepage only. Shared product-image priority behavior improves the English homepage load check without adding French copy or a French adaptation.
+
+## 2026-09-19 - English homepage proof refresh
+
+**Owner-requested English-only update:** the homepage proof strip now uses `+145K users impacted` and the Mastercard Foundation-supported GHSS Youth Innovation Challenge (GHSS-YIC) recognition in 2026 in place of the previous PROMEX 2025 item. French copy and the detailed Impact/Work evidence remain unchanged for the later localization review.
+
+The homepage also carries provisional `Powered by Microsoft for Startups` wording for local review at the owner's request. The claim remains in the evidence register until the program/beneficiary record, entity and period are supplied; it must be validated before launch publication.

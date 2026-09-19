@@ -38,9 +38,11 @@ const screens = {
 export function ProductScreen({
   kind,
   className = '',
+  priority = false,
 }: {
   kind: keyof typeof screens;
   className?: string;
+  priority?: boolean;
 }) {
   const screen = screens[kind];
   return (
@@ -51,6 +53,7 @@ export function ProductScreen({
           src={`/media/products/${screen.file}.webp`}
           width={screen.width}
           height={screen.height}
+          priority={priority}
           alt={screen.alt}
           sizes="(max-width: 760px) 92vw, 60vw"
         />

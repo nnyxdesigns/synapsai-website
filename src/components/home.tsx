@@ -1,10 +1,21 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowUpRight, ArrowDown, Cpu, Layers3, Smartphone, Award, Globe2 } from 'lucide-react';
 import { copy, facts, localPath, Locale, solutions, solutionSlugs } from '@/lib/site';
 import { Cta, ProductImage, TextLink } from './site-ui';
 import { SystemVisual, OrbitVisual } from './visuals';
 import { EcosystemFeature } from './ecosystem';
 import { InsightsPreview } from './insights';
+
+const englishHomepageProof = {
+  users: '+145K',
+  usersLabel: 'users impacted',
+  support: 'Powered by Microsoft for Startups',
+  supportLabel: 'Startup program support',
+  recognition: 'Mastercard Foundation',
+  recognitionLabel: 'GHSS-YIC · Youth Innovation Challenge · 2026',
+};
+
 export function Home({ locale }: { locale: Locale }) {
   if (locale === 'en') return <EnglishHome />;
   const t = copy[locale];
@@ -216,7 +227,17 @@ function EnglishHome() {
           </div>
         </div>
         <div className="home-hero-visual">
-          <SystemVisual locale="en" />
+          <figure className="home-hero-photo">
+            <Image
+              src="/media/generated/home/home-team-hero-concept.png"
+              width={1536}
+              height={1024}
+              priority
+              sizes="(max-width: 760px) 100vw, 52vw"
+              alt="Fictional product team collaborating around an AI product concept"
+            />
+            <figcaption>CONCEPT VISUAL / FICTIONAL TEAM</figcaption>
+          </figure>
         </div>
         <a href="#capabilities" className="scroll-hint" aria-label="Discover our capabilities">
           <ArrowDown size={14} />
@@ -232,18 +253,18 @@ function EnglishHome() {
             <strong>Products in people’s hands.</strong>
           </div>
           <div className="proof-item">
-            <strong>{facts.learners}</strong>
-            <span>{t.proof[0]}</span>
+            <strong>{englishHomepageProof.users}</strong>
+            <span>{englishHomepageProof.usersLabel}</span>
           </div>
           <div className="proof-item">
-            <strong>{t.proof[1]}</strong>
-            <span>{t.proof[2]}</span>
+            <strong>{englishHomepageProof.support}</strong>
+            <span>{englishHomepageProof.supportLabel}</span>
           </div>
           <div className="proof-item proof-award">
             <Award size={27} strokeWidth={1.3} />
             <div>
-              <strong>{t.proof[3]}</strong>
-              <span>{t.proof[4]}</span>
+              <strong>{englishHomepageProof.recognition}</strong>
+              <span>{englishHomepageProof.recognitionLabel}</span>
             </div>
           </div>
         </div>
@@ -289,6 +310,42 @@ function EnglishHome() {
 
       <EcosystemFeature />
 
+      <section className="home-context-band">
+        <div className="container home-context-grid">
+          <figure className="home-context-visual">
+            <Image
+              src="/media/generated/home/home-learning-context-concept.png"
+              width={1024}
+              height={1536}
+              sizes="(max-width: 760px) 100vw, 42vw"
+              alt="Fictional learner working with a mentor around a study exercise"
+            />
+            <figcaption>CONCEPT VISUAL / FICTIONAL LEARNING SCENE</figcaption>
+          </figure>
+          <div className="home-context-copy">
+            <span className="eyebrow">THE CONDITIONS AROUND THE PRODUCT</span>
+            <h2>Useful technology starts with the situation around it.</h2>
+            <p>
+              People bring different tools, languages, access conditions and ways of working to the
+              same task. We design the product around that context, so the interface can support the
+              next useful decision.
+            </p>
+            <div className="home-context-points" aria-label="Design principles">
+              <span>
+                <b>01</b> Start with the real task
+              </span>
+              <span>
+                <b>02</b> Make complexity feel workable
+              </span>
+              <span>
+                <b>03</b> Leave room for human judgment
+              </span>
+            </div>
+            <TextLink href="/company/about">How we work</TextLink>
+          </div>
+        </div>
+      </section>
+
       <section className="home-band home-band-dark home-problems-band">
         <div className="section container problems-section">
           <div>
@@ -312,7 +369,19 @@ function EnglishHome() {
 
       <section className="home-band home-band-light">
         <div className="approach-section container">
-          <OrbitVisual />
+          <div className="home-approach-visual">
+            <figure className="home-network-visual">
+              <Image
+                src="/media/generated/home/home-network-concept.png"
+                width={1536}
+                height={1024}
+                sizes="(max-width: 760px) 100vw, 48vw"
+                alt="Conceptual network connecting people, context, workflow and learning"
+              />
+              <figcaption>CONCEPT SYSTEM MAP / NOT PRODUCT DATA</figcaption>
+            </figure>
+            <OrbitVisual />
+          </div>
           <div>
             <span className="eyebrow">{t.approachLabel}</span>
             <h2>{t.approachTitle}</h2>
@@ -324,7 +393,7 @@ function EnglishHome() {
 
       <section className="home-band home-band-dark home-proof-band">
         <div className="container home-recognition">
-          <span>PROMEX 2025 · Award</span>
+          <span>Mastercard Foundation · GHSS-YIC 2026</span>
           <span>CONIA 2025 · Participation</span>
           <span>CITS 2026 · Bootcamp</span>
           <TextLink href="/company/impact">Recognition &amp; milestones</TextLink>

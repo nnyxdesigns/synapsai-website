@@ -165,3 +165,19 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - Legacy Insights slug returned HTTP 301 to the current article URL.
 - The production build uses `SITE_PUBLISHED=true`; review-only articles remain excluded from public navigation and sitemap.
 
+
+## English homepage visual enrichment - 2026-09-19
+
+- Production-style preview build: passed with 53 static pages; SEO asset/intent checks passed for 19 strategic routes.
+- ESLint, TypeScript and SEO checks: passed.
+- Targeted Playwright homepage scenario: passed at 390px and 1440px, including alternating surfaces, real product media and no horizontal overflow.
+- Desktop and mobile homepage captures were inspected. New hero, context and approach visuals loaded and kept their concept labels; the first ecosystem product image is priority-loaded for the initial homepage journey.
+- The broader legacy visual-capture test reached the screenshots but reports Firebase static-export RSC payload requests as HTTP 404s in the emulator; this is a test harness/static-export response issue, not a failed homepage image request. The targeted homepage scenario passed after the priority-loading adjustment.
+- No French copy, French homepage structure or production deployment was changed in this iteration.
+
+## English homepage proof refresh - 2026-09-19
+
+- Production-style preview build, SEO checks, ESLint and TypeScript passed after replacing the English homepage proof copy.
+- The focused homepage Playwright scenario passed at 390px and 1440px. The proof strip now renders `+145K users impacted` and the Mastercard Foundation-supported GHSS-YIC 2026 recognition.
+- The Microsoft for Startups line is provisional local-review copy and remains blocked from launch publication until its program/beneficiary evidence is supplied.
+- French homepage copy and detailed Impact/Work evidence were not changed; no Firebase deployment was performed.

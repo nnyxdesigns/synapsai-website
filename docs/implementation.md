@@ -106,7 +106,7 @@ The first French rollout lots are implemented locally for `/fr`, `/fr/solutions`
 
 ## English homepage visual rhythm — 2026-09-18
 
-The English homepage now uses alternating dark technical and light white/mint bands. The hero keeps the SynapsAi systems diagram clear; the real ImaginAi and ImaginAi Prof compositions remain in the dedicated ecosystem showcase. The light bands carry proof points, the product ecosystem showcase and the approach narrative with increased vertical spacing; dark bands carry capabilities, real-world problems, recognition and Insights. The French homepage keeps its previous structure for the later localization pass.
+The English homepage now uses alternating dark technical and light white/mint bands. The real ImaginAi and ImaginAi Prof compositions remain in the dedicated ecosystem showcase. The light bands carry proof points, the product ecosystem showcase and the approach narrative with increased vertical spacing; dark bands carry capabilities, real-world problems, recognition and Insights. The French homepage keeps its previous structure for the later localization pass.
 
 ## English ImaginAi mobile product story — 2026-09-18
 
@@ -131,3 +131,11 @@ Each entry has a unique canonical, description, Article metadata, source notes, 
 The Study Tools chapter now pairs the product image on the left with the four capability cards on the right in a 2×2 grid. Both desktop columns stretch to the same height; tablet and mobile retain a readable stacked layout.
 
 Study Tools is now an interactive client component. Hover, click, focus and touch select a capability and crossfade the matching concept mockup without resizing the layout. The cards use tab semantics, roving focus, arrow/Home/End keyboard controls and a visible selected state. Reduced-motion removes the crossfade through the shared motion preference rule. Four generated concept mockups are temporary, visibly labelled and recorded in the media manifest.
+
+## English homepage visual enrichment - 2026-09-19
+
+The English homepage now uses three generated editorial concepts to add human and technical context without inventing evidence: a fictional product-team scene in the hero, a fictional learner-and-mentor scene in a context section, and an abstract connected-system map in the approach section. The hero's “Connected by design” card was removed; the scene now fills the background with a dark text-protection gradient while keeping the subjects visible. Each visual has an explicit concept label and a provenance entry in `public/media/manifest.json`. Approved product compositions, copy, metrics and alternating surface rhythm remain in place. A small priority-loading option ensures the first homepage product composition loads reliably in the initial visual journey. French copy and structure were not adapted.
+
+## English homepage proof refresh - 2026-09-19
+
+The English homepage proof strip now presents `+145K users impacted` and the Mastercard Foundation-supported GHSS Youth Innovation Challenge (GHSS-YIC) recognition in 2026. The previous PROMEX 2025 proof item was removed from this English homepage surface; French content and detailed Impact/Work records remain unchanged for the later localization/content review. The requested Microsoft for Startups wording is marked provisional pending a program/beneficiary record, so it must be validated before launch publication.

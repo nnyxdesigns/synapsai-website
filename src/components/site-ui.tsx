@@ -139,8 +139,17 @@ export function Footer({
     </footer>
   );
 }
-export function ProductImage({ locale, large = false }: { locale: Locale; large?: boolean }) {
-  if (locale === 'en') return <ProductScreen kind={large ? 'scene' : 'mobile'} />;
+export function ProductImage({
+  locale,
+  large = false,
+  priority = false,
+}: {
+  locale: Locale;
+  large?: boolean;
+  priority?: boolean;
+}) {
+  if (locale === 'en')
+    return <ProductScreen kind={large ? 'scene' : 'mobile'} priority={priority} />;
   return (
     <div className={`product-image ${large ? 'product-image-large' : ''}`}>
       <div className="product-image-head">

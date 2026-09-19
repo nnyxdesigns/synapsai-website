@@ -111,7 +111,7 @@ export function EcosystemFeature() {
                   <i />
                   IN USE
                 </span>
-                {i === 0 ? <ProductImage locale="en" /> : <ProfVisual />}
+                {i === 0 ? <ProductImage locale="en" priority /> : <ProfVisual />}
               </div>
               <div className="ecosystem-product-copy">
                 <span className="eyebrow">
