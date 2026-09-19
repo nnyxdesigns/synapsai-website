@@ -181,3 +181,10 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - The focused homepage Playwright scenario passed at 390px and 1440px. The proof strip now renders `+145K users impacted` and the Mastercard Foundation-supported GHSS-YIC 2026 recognition.
 - The Microsoft for Startups line is provisional local-review copy and remains blocked from launch publication until its program/beneficiary evidence is supplied.
 - French homepage copy and detailed Impact/Work evidence were not changed; no Firebase deployment was performed.
+
+## Firebase deployment - v0.2.1 - 2026-09-19
+
+- Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.
+- Firebase Hosting site `synpasaico` in project `imaginai-f4fca` released version `f3bf61dcf2120e83` at `1789825344965000`.
+- Live smoke checks passed with HTTP 200 for `/`, `/products/imaginai`, `/insights`, `/robots.txt` and `/sitemap.xml`.
+- The live homepage contains the new `145K`, Mastercard Foundation and Microsoft for Startups proof copy. The Microsoft wording remains provisional pending evidence validation.

@@ -1,6 +1,6 @@
 ﻿# Firebase Hosting
 
-**Live:** https://synapsai.co — v0.2.0 deployed 2026-09-18 at 21:44 Africa/Douala (19:44 UTC). Firebase version `eb18816f7e494dde`; live release `1789760669591000`. Public route checks passed after deployment.
+**Live:** https://synapsai.co — v0.2.1 deployed 2026-09-19 at 14:42 Africa/Douala (13:42 UTC). Firebase version `f3bf61dcf2120e83`; live release `1789825344965000`. Public route checks passed after deployment.
 
 Production target verified on 2026-09-17:
 
