@@ -236,13 +236,8 @@ function EnglishHome() {
               sizes="(max-width: 760px) 100vw, 52vw"
               alt="Fictional product team collaborating around an AI product concept"
             />
-            <figcaption>CONCEPT VISUAL / FICTIONAL TEAM</figcaption>
           </figure>
         </div>
-        <a href="#capabilities" className="scroll-hint" aria-label="Discover our capabilities">
-          <ArrowDown size={14} />
-          <span>SCROLL TO DISCOVER</span>
-        </a>
       </section>
 
       <section className="home-band home-band-light">

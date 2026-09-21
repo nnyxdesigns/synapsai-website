@@ -79,6 +79,7 @@
   --home-light-ink: #101a17;
   --home-light-muted: #536760;
   --home-light-line: #cbdad3;
+  overflow-x: clip;
 }
 .home-band-light {
   background: var(--home-light);

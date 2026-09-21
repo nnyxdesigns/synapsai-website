@@ -189,6 +189,13 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - The focused English homepage Playwright scenario passed at 390px and 1440px with no horizontal overflow.
 - This local correction has not been deployed to Firebase yet.
 
+## English homepage hero cleanup - 2026-09-21
+
+- `overflow-x: clip` contains the full-bleed hero extension without changing the image framing.
+- The English hero no longer renders the `SCROLL TO DISCOVER` control or the fictional-team concept caption.
+- Preview build, ESLint, TypeScript and the focused Playwright homepage scenario passed at 390px and 1440px; no horizontal overflow was reported.
+- This cleanup remains local and is not deployed to Firebase yet.
+
 ## Firebase deployment - v0.2.1 - 2026-09-19
 
 - Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.
