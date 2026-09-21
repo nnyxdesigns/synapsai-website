@@ -16,7 +16,6 @@ export function PageLoader() {
     let timer: number | undefined;
     let safetyTimer: number | undefined;
     let animationFrame: number | undefined;
-    let loadHandler: (() => void) | undefined;
     const navigation = performance.getEntriesByType('navigation')[0] as
       PerformanceNavigationTiming | undefined;
     const startedAt = navigation?.responseEnd || performance.now();
@@ -78,19 +77,10 @@ export function PageLoader() {
       setVisible(false);
     };
 
-    const scheduleInitialHide = () => {
-      const remaining = Math.max(0, MIN_BOOT_DURATION - (performance.now() - startedAt));
-      timer = window.setTimeout(hide, remaining);
-    };
-
     try {
       safetyTimer = window.setTimeout(hide, MAX_BOOT_DURATION);
-      if (document.readyState === 'complete') {
-        requestAnimationFrame(scheduleInitialHide);
-      } else {
-        loadHandler = scheduleInitialHide;
-        window.addEventListener('load', loadHandler, { once: true });
-      }
+      const remaining = Math.max(0, MIN_BOOT_DURATION - (performance.now() - startedAt));
+      timer = window.setTimeout(hide, remaining);
     } catch {
       requestAnimationFrame(hide);
     }
@@ -99,7 +89,6 @@ export function PageLoader() {
       window.clearTimeout(timer);
       window.clearTimeout(safetyTimer);
       if (animationFrame !== undefined) cancelAnimationFrame(animationFrame);
-      if (loadHandler) window.removeEventListener('load', loadHandler);
     };
   }, []);
 
