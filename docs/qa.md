@@ -202,6 +202,12 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - Preview build, ESLint, TypeScript and the focused homepage Playwright scenario passed at 390px and 1440px.
 - This spacing adjustment remains local and is not deployed to Firebase yet.
 
+## English homepage approach and Insights transition - 2026-09-21
+
+- Removed the legacy orbit schema from the English approach image and removed the compact recognition row above “Ideas from the work”.
+- Preview build, ESLint, TypeScript and the focused homepage Playwright scenario passed at 390px and 1440px.
+- This structural cleanup remains local and is not deployed to Firebase yet.
+
 ## Firebase deployment - v0.2.2 - 2026-09-21
 
 - Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.

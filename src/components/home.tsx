@@ -375,7 +375,6 @@ function EnglishHome() {
               />
               <figcaption>CONCEPT SYSTEM MAP / NOT PRODUCT DATA</figcaption>
             </figure>
-            <OrbitVisual />
           </div>
           <div>
             <span className="eyebrow">{t.approachLabel}</span>
@@ -387,12 +386,6 @@ function EnglishHome() {
       </section>
 
       <section className="home-band home-band-dark home-proof-band">
-        <div className="container home-recognition">
-          <span>Mastercard Foundation · GHSS-YIC 2026</span>
-          <span>CONIA 2025 · Participation</span>
-          <span>CITS 2026 · Bootcamp</span>
-          <TextLink href="/company/impact">Recognition &amp; milestones</TextLink>
-        </div>
         <InsightsPreview />
       </section>
 
