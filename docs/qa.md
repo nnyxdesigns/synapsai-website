@@ -228,7 +228,8 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - Constrained card media and copy widths and stretched the card contents to keep the first and second question text aligned below their images.
 - Expanded the focused homepage browser check to 390px, 751px, 800px, 849px, 1024px and 1440px; the medium-width test asserts each copy block stays within its card bounds.
 - Preview build, ESLint, TypeScript, manifest parsing and the responsive Playwright check passed.
-- This alignment fix remains local and is not deployed to Firebase yet.
+- Production build passed with `SITE_PUBLISHED=true`; the release was deployed to Firebase Hosting site `synpasaico` in project `imaginai-f4fca`.
+- Live smoke checks passed for `/`, `/solutions/ai-automation`, `/robots.txt` and `/sitemap.xml` with HTTP 200 responses.
 
 ## Firebase deployment - v0.2.2 - 2026-09-21
 
