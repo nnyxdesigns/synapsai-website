@@ -202,6 +202,13 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - Preview build, ESLint, TypeScript and the focused homepage Playwright scenario passed at 390px and 1440px.
 - This spacing adjustment remains local and is not deployed to Firebase yet.
 
+## Firebase deployment - v0.2.2 - 2026-09-21
+
+- Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.
+- Firebase Hosting site `synpasaico` in project `imaginai-f4fca` released version `53e77be691a89b1e` at `1789982221277000`.
+- Live smoke checks passed with HTTP 200 for `/`, `/products/imaginai`, `/insights`, `/robots.txt` and `/sitemap.xml`.
+- The deployed version includes the contained hero image, reduced responsive hero spacing, and removed hero scroll/caption controls.
+
 ## Firebase deployment - v0.2.1 - 2026-09-19
 
 - Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.
