@@ -139,3 +139,5 @@ The English homepage now uses three generated editorial concepts to add human an
 ## English homepage proof refresh - 2026-09-19
 
 The English homepage proof strip now presents `+145K users impacted` and the Mastercard Foundation-supported GHSS Youth Innovation Challenge (GHSS-YIC) recognition in 2026. The previous PROMEX 2025 proof item was removed from this English homepage surface; French content and detailed Impact/Work records remain unchanged for the later localization/content review. The requested Microsoft for Startups wording is marked provisional pending a program/beneficiary record, so it must be validated before launch publication.
+
+The hero visual now extends through the centered container's right gutter so the generated scene reaches the viewport edge without leaving a dark strip beside the image.

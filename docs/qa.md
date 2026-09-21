@@ -182,6 +182,13 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - The Microsoft for Startups line is provisional local-review copy and remains blocked from launch publication until its program/beneficiary evidence is supplied.
 - French homepage copy and detailed Impact/Work evidence were not changed; no Firebase deployment was performed.
 
+## English homepage hero edge correction - 2026-09-21
+
+- The hero visual was extended through the centered container's right gutter to remove the apparent dark strip beside the image.
+- Preview build, ESLint, TypeScript and SEO checks passed.
+- The focused English homepage Playwright scenario passed at 390px and 1440px with no horizontal overflow.
+- This local correction has not been deployed to Firebase yet.
+
 ## Firebase deployment - v0.2.1 - 2026-09-19
 
 - Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.

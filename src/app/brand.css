@@ -141,6 +141,8 @@
   position: absolute;
   z-index: 0;
   inset: 0;
+  /* The hero is inside a centered container; extend the visual through its right gutter. */
+  right: calc((100vw - 100%) / -2);
   pointer-events: none;
 }
 .home-hero .scroll-hint {
