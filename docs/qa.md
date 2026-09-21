@@ -225,8 +225,8 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 
 ## English homepage medium-width alignment - 2026-09-21
 
-- Constrained card media and copy widths to keep the first and second question text inside their cards.
-- Expanded the focused homepage browser check to 390px, 1024px and 1440px; the medium-width test asserts each copy block stays within its card bounds.
+- Constrained card media and copy widths and stretched the card contents to keep the first and second question text aligned below their images.
+- Expanded the focused homepage browser check to 390px, 751px, 800px, 849px, 1024px and 1440px; the medium-width test asserts each copy block stays within its card bounds.
 - Preview build, ESLint, TypeScript, manifest parsing and the responsive Playwright check passed.
 - This alignment fix remains local and is not deployed to Firebase yet.
 

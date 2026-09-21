@@ -331,6 +331,7 @@
   height: 100%;
   min-width: 0;
   flex-direction: column;
+  align-items: stretch;
   gap: 0;
   border: 1px solid #273239;
   padding: 0;
@@ -338,6 +339,10 @@
     border-color 220ms ease,
     transform 220ms ease,
     background 220ms ease;
+}
+.home-english .home-problems-band .problem-list > a:first-child {
+  display: flex;
+  align-items: stretch;
 }
 .home-english .home-problem-card:hover {
   border-color: #5effd9;
@@ -365,8 +370,10 @@
 }
 .home-problem-copy {
   position: relative;
+  width: 100%;
   min-width: 0;
   min-height: 170px;
+  box-sizing: border-box;
   padding: 22px 42px 28px 22px;
 }
 .home-problem-copy .problem-index {

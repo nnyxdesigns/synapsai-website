@@ -127,7 +127,7 @@ test('mobile menu, French layout, and media remain usable across screen sizes', 
     .toBe(true);
 });
 test('English homepage uses alternating surfaces and real product proof', async ({ page }) => {
-  for (const width of [390, 1024, 1440]) {
+  for (const width of [390, 751, 800, 849, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto('/');
     await expect(page.locator('.home-english')).toHaveCount(1);
@@ -136,7 +136,7 @@ test('English homepage uses alternating surfaces and real product proof', async 
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
     ).toBe(true);
-    if (width === 1024) {
+    if (width >= 751 && width <= 1024) {
       const cardBounds = await page.locator('.home-problem-card').evaluateAll((cards) =>
         cards.map((card) => {
           const cardRect = card.getBoundingClientRect();
@@ -144,8 +144,10 @@ test('English homepage uses alternating surfaces and real product proof', async 
           return {
             cardLeft: cardRect.left,
             cardRight: cardRect.right,
+            cardWidth: cardRect.width,
             copyLeft: copyRect.left,
             copyRight: copyRect.right,
+            copyWidth: copyRect.width,
           };
         }),
       );
@@ -153,6 +155,8 @@ test('English homepage uses alternating surfaces and real product proof', async 
       for (const bounds of cardBounds) {
         expect(bounds.copyLeft).toBeGreaterThanOrEqual(bounds.cardLeft);
         expect(bounds.copyRight).toBeLessThanOrEqual(bounds.cardRight);
+        expect(Math.abs(bounds.copyLeft - (bounds.cardLeft + 1))).toBeLessThanOrEqual(1);
+        expect(Math.abs(bounds.copyWidth - (bounds.cardWidth - 2))).toBeLessThanOrEqual(1);
       }
     }
     expect(

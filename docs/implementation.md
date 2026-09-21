@@ -152,4 +152,4 @@ The English “Made for the real world” section now presents its three questio
 
 The card grid now keeps all question bodies aligned with equal-height rows, uses two columns at intermediate widths, and switches to one column on mobile. The first AI & Automation visual was replaced with a more mechanical glass-and-hologram concept with restrained mint spheres.
 
-The card media and copy now have explicit zero-width constraints so the first card cannot push its text outside the card at medium widths.
+The card media and copy now have explicit width and zero-width constraints, with stretched alignment, so the first card cannot shrink or push its text outside the card at medium widths. The homepage override also neutralizes the legacy first-item grid rule between 750px and 850px.
