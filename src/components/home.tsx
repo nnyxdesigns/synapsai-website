@@ -201,8 +201,8 @@ function EnglishHome() {
   const icons = [Cpu, Layers3, Smartphone];
   const problemVisuals = [
     {
-      src: '/media/generated/home/real-world-access-concept.png',
-      alt: 'Conceptual illuminated pathway representing access conditions',
+      src: '/media/generated/home/real-world-automation-mechanical-concept.png',
+      alt: 'Mechanical concept system with glass panels and small glowing spheres representing automation',
     },
     {
       src: '/media/generated/home/real-world-workflow-concept.png',

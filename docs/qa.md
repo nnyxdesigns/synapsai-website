@@ -216,6 +216,13 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - Preview build, ESLint, TypeScript, manifest parsing and the focused homepage Playwright scenario passed.
 - This section remains local and is not deployed to Firebase yet.
 
+## English homepage real-world card refinement - 2026-09-21
+
+- Equal-height grid rows and an intermediate two-column breakpoint correct the first and second card alignment as the viewport narrows.
+- The AI & Automation concept visual was replaced with a mechanical smoked-glass and hologram composition; its provenance is recorded in `public/media/manifest.json`.
+- Preview build, ESLint, TypeScript, manifest parsing and the focused homepage Playwright scenario passed at 390px and 1440px.
+- This refinement remains local and is not deployed to Firebase yet.
+
 ## Firebase deployment - v0.2.2 - 2026-09-21
 
 - Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.

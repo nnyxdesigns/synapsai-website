@@ -149,3 +149,5 @@ The hero minimum height was reduced to 620px on desktop and 570px on mobile; the
 The English “The way we think” section now shows its contextual image without the legacy orbit schema layered over it. The compact recognition row above “Ideas from the work” was removed so the editorial preview follows the preceding section directly.
 
 The English “Made for the real world” section now presents its three questions as equal cards in a desktop three-column grid, each with a generated dark technical concept visual above the question. The cards stack on mobile and the images are explicitly conceptual rather than product, client or outcome evidence.
+
+The card grid now keeps all question bodies aligned with equal-height rows, uses two columns at intermediate widths, and switches to one column on mobile. The first AI & Automation visual was replaced with a more mechanical glass-and-hologram concept with restrained mint spheres.

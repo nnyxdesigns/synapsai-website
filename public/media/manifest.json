@@ -781,6 +781,16 @@
       "prompt": "Premium cinematic 3D concept art of an illuminated pathway crossing different access conditions in a near-black technical environment, charcoal and muted graphite with sparse SynapsAi mint accents, no people, logos, text or UI."
     },
     {
+      "file": "generated/home/real-world-automation-mechanical-concept.png",
+      "source": "OpenAI built-in image generation; mechanical automation concept",
+      "reviewedAt": "2026-09-21",
+      "generatedAt": "2026-09-21",
+      "kind": "generated-editorial-concept",
+      "status": "local-review",
+      "use": "English homepage AI and Automation card; mechanical concept visual, not product UI or infrastructure evidence",
+      "prompt": "Premium cinematic 3D technical concept art of interlocking mechanical modules, smoked glass panels, a subtle holographic control layer and small glowing mint spheres moving along the mechanism, near-black studio, no people, logos, text or UI."
+    },
+    {
       "file": "generated/home/real-world-workflow-concept.png",
       "source": "OpenAI built-in image generation; abstract workflow pathway",
       "reviewedAt": "2026-09-21",
