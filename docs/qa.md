@@ -208,6 +208,14 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - Preview build, ESLint, TypeScript and the focused homepage Playwright scenario passed at 390px and 1440px.
 - This structural cleanup remains local and is not deployed to Firebase yet.
 
+## English homepage real-world question grid - 2026-09-21
+
+- Added three generated concept visuals above the English “Made for the real world” questions.
+- Desktop uses three equal columns; mobile collapses to one readable column without horizontal overflow.
+- The generated assets and prompts are recorded in `public/media/manifest.json`.
+- Preview build, ESLint, TypeScript, manifest parsing and the focused homepage Playwright scenario passed.
+- This section remains local and is not deployed to Firebase yet.
+
 ## Firebase deployment - v0.2.2 - 2026-09-21
 
 - Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.

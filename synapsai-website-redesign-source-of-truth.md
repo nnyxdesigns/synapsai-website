@@ -2077,3 +2077,7 @@ The owner supplied the current ImaginAi mobile home screen and explicitly author
 **Owner-requested English-only update:** the homepage proof strip now uses `+145K users impacted` and the Mastercard Foundation-supported GHSS Youth Innovation Challenge (GHSS-YIC) recognition in 2026 in place of the previous PROMEX 2025 item. French copy and the detailed Impact/Work evidence remain unchanged for the later localization review.
 
 The homepage also carries provisional `Powered by Microsoft for Startups` wording for local review at the owner's request. The claim remains in the evidence register until the program/beneficiary record, entity and period are supplied; it must be validated before launch publication.
+
+## 2026-09-21 - English homepage real-world question grid
+
+The English “Made for the real world” section now uses a three-column desktop card grid. Each question is paired with a generated dark technical concept visual above it: access conditions, workflow fit and long-term product care. These images are editorial concepts only and are recorded in `public/media/manifest.json`; they do not depict product UI, clients, deployments or measured outcomes. The cards stack on mobile.

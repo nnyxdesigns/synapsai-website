@@ -769,6 +769,36 @@
       "status": "local-review",
       "use": "English homepage approach visual; abstract system map, not product data or infrastructure evidence",
       "prompt": "Refined abstract 3D visualization of connected product layers: a luminous mint core linked by thin lines to modular blocks representing people, context, workflow and learning, near-black background, no labels or logos."
+    },
+    {
+      "file": "generated/home/real-world-access-concept.png",
+      "source": "OpenAI built-in image generation; abstract access pathway",
+      "reviewedAt": "2026-09-21",
+      "generatedAt": "2026-09-21",
+      "kind": "generated-editorial-concept",
+      "status": "local-review",
+      "use": "English homepage Made for the real world card; conceptual access visual, not a product or impact claim",
+      "prompt": "Premium cinematic 3D concept art of an illuminated pathway crossing different access conditions in a near-black technical environment, charcoal and muted graphite with sparse SynapsAi mint accents, no people, logos, text or UI."
+    },
+    {
+      "file": "generated/home/real-world-workflow-concept.png",
+      "source": "OpenAI built-in image generation; abstract workflow pathway",
+      "reviewedAt": "2026-09-21",
+      "generatedAt": "2026-09-21",
+      "kind": "generated-editorial-concept",
+      "status": "local-review",
+      "use": "English homepage Made for the real world card; conceptual workflow visual, not an architecture diagram",
+      "prompt": "Premium cinematic 3D concept art of connected modular blocks and a flowing line joining human work steps in a near-black technical studio, charcoal and muted graphite with sparse SynapsAi mint accents, no people, logos, text or UI."
+    },
+    {
+      "file": "generated/home/real-world-after-launch-concept.png",
+      "source": "OpenAI built-in image generation; abstract product-care structure",
+      "reviewedAt": "2026-09-21",
+      "generatedAt": "2026-09-21",
+      "kind": "generated-editorial-concept",
+      "status": "local-review",
+      "use": "English homepage Made for the real world card; conceptual iteration visual, not a delivery or outcome claim",
+      "prompt": "Premium cinematic 3D concept art of a luminous structure continuing beyond a launch point with connected markers suggesting iteration and long-term care, near-black technical landscape, charcoal and muted graphite with sparse SynapsAi mint accents, no people, logos, text or UI."
     }
   ]
 }

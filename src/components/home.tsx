@@ -199,6 +199,20 @@ export function Home({ locale }: { locale: Locale }) {
 function EnglishHome() {
   const t = copy.en;
   const icons = [Cpu, Layers3, Smartphone];
+  const problemVisuals = [
+    {
+      src: '/media/generated/home/real-world-access-concept.png',
+      alt: 'Conceptual illuminated pathway representing access conditions',
+    },
+    {
+      src: '/media/generated/home/real-world-workflow-concept.png',
+      alt: 'Conceptual modular pathway representing workflow fit',
+    },
+    {
+      src: '/media/generated/home/real-world-after-launch-concept.png',
+      alt: 'Conceptual evolving structure representing long-term product care',
+    },
+  ];
 
   return (
     <div className="home-english">
@@ -349,9 +363,22 @@ function EnglishHome() {
           </div>
           <div className="problem-list">
             {t.problems.map((problem, i) => (
-              <Link key={problem} href={`/solutions/${solutionSlugs[i]}`}>
-                <span className="problem-index">0{i + 1}</span>
-                <div>
+              <Link
+                key={problem}
+                href={`/solutions/${solutionSlugs[i]}`}
+                className="home-problem-card"
+              >
+                <figure className="home-problem-visual">
+                  <Image
+                    src={problemVisuals[i].src}
+                    alt={problemVisuals[i].alt}
+                    width={716}
+                    height={716}
+                    sizes="(max-width: 760px) 100vw, 33vw"
+                  />
+                </figure>
+                <div className="home-problem-copy">
+                  <span className="problem-index">0{i + 1}</span>
                   <h3>{problem}</h3>
                   <span>{t.problemCopy[i]}</span>
                 </div>

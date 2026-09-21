@@ -147,3 +147,5 @@ The English hero now clips that intentional edge extension at the viewport to pr
 The hero minimum height was reduced to 620px on desktop and 570px on mobile; the mobile visual minimum is 540px so the reduced layout does not retain the former empty lower area.
 
 The English “The way we think” section now shows its contextual image without the legacy orbit schema layered over it. The compact recognition row above “Ideas from the work” was removed so the editorial preview follows the preceding section directly.
+
+The English “Made for the real world” section now presents its three questions as equal cards in a desktop three-column grid, each with a generated dark technical concept visual above the question. The cards stack on mobile and the images are explicitly conceptual rather than product, client or outcome evidence.
