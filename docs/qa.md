@@ -223,6 +223,13 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - Preview build, ESLint, TypeScript, manifest parsing and the focused homepage Playwright scenario passed at 390px and 1440px.
 - This refinement remains local and is not deployed to Firebase yet.
 
+## English homepage medium-width alignment - 2026-09-21
+
+- Constrained card media and copy widths to keep the first and second question text inside their cards.
+- Expanded the focused homepage browser check to 390px, 1024px and 1440px; the medium-width test asserts each copy block stays within its card bounds.
+- Preview build, ESLint, TypeScript, manifest parsing and the responsive Playwright check passed.
+- This alignment fix remains local and is not deployed to Firebase yet.
+
 ## Firebase deployment - v0.2.2 - 2026-09-21
 
 - Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.

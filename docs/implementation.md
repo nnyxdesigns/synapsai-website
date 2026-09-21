@@ -151,3 +151,5 @@ The English “The way we think” section now shows its contextual image withou
 The English “Made for the real world” section now presents its three questions as equal cards in a desktop three-column grid, each with a generated dark technical concept visual above the question. The cards stack on mobile and the images are explicitly conceptual rather than product, client or outcome evidence.
 
 The card grid now keeps all question bodies aligned with equal-height rows, uses two columns at intermediate widths, and switches to one column on mobile. The first AI & Automation visual was replaced with a more mechanical glass-and-hologram concept with restrained mint spheres.
+
+The card media and copy now have explicit zero-width constraints so the first card cannot push its text outside the card at medium widths.

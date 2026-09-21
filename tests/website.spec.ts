@@ -127,7 +127,7 @@ test('mobile menu, French layout, and media remain usable across screen sizes', 
     .toBe(true);
 });
 test('English homepage uses alternating surfaces and real product proof', async ({ page }) => {
-  for (const width of [390, 1440]) {
+  for (const width of [390, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto('/');
     await expect(page.locator('.home-english')).toHaveCount(1);
@@ -136,6 +136,25 @@ test('English homepage uses alternating surfaces and real product proof', async 
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
     ).toBe(true);
+    if (width === 1024) {
+      const cardBounds = await page.locator('.home-problem-card').evaluateAll((cards) =>
+        cards.map((card) => {
+          const cardRect = card.getBoundingClientRect();
+          const copyRect = card.querySelector('.home-problem-copy')!.getBoundingClientRect();
+          return {
+            cardLeft: cardRect.left,
+            cardRight: cardRect.right,
+            copyLeft: copyRect.left,
+            copyRight: copyRect.right,
+          };
+        }),
+      );
+      expect(cardBounds).toHaveLength(3);
+      for (const bounds of cardBounds) {
+        expect(bounds.copyLeft).toBeGreaterThanOrEqual(bounds.cardLeft);
+        expect(bounds.copyRight).toBeLessThanOrEqual(bounds.cardRight);
+      }
+    }
     expect(
       await page
         .locator('.home-band-light')
