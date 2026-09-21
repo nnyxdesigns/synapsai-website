@@ -143,3 +143,5 @@ The English homepage proof strip now presents `+145K users impacted` and the Mas
 The hero visual now extends through the centered container's right gutter so the generated scene reaches the viewport edge without leaving a dark strip beside the image.
 
 The English hero now clips that intentional edge extension at the viewport to prevent horizontal page scrolling. Its scroll hint and concept caption were removed for a quieter first viewport.
+
+The hero minimum height was reduced to 620px on desktop and 570px on mobile; the mobile visual minimum is 540px so the reduced layout does not retain the former empty lower area.

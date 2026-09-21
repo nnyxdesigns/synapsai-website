@@ -196,6 +196,12 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - Preview build, ESLint, TypeScript and the focused Playwright homepage scenario passed at 390px and 1440px; no horizontal overflow was reported.
 - This cleanup remains local and is not deployed to Firebase yet.
 
+## English homepage hero spacing - 2026-09-21
+
+- Reduced the desktop and mobile hero minimum heights to remove the empty area left after the hero controls were removed.
+- Preview build, ESLint, TypeScript and the focused homepage Playwright scenario passed at 390px and 1440px.
+- This spacing adjustment remains local and is not deployed to Firebase yet.
+
 ## Firebase deployment - v0.2.1 - 2026-09-19
 
 - Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.

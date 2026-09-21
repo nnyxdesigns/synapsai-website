@@ -134,7 +134,7 @@
   color: #287c68;
 }
 .home-hero {
-  min-height: 685px;
+  min-height: 620px;
   display: block;
   isolation: isolate;
 }
@@ -461,14 +461,14 @@
 
 @media (max-width: 760px) {
   .home-hero {
-    min-height: 700px;
+    min-height: 570px;
   }
   .home-hero-visual {
     min-height: auto;
   }
   .home-hero-photo {
     height: 100%;
-    min-height: 620px;
+    min-height: 540px;
   }
   .home-hero-photo img {
     object-position: 100% center;
