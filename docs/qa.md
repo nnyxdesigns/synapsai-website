@@ -231,6 +231,12 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - Production build passed with `SITE_PUBLISHED=true`; the release was deployed to Firebase Hosting site `synpasaico` in project `imaginai-f4fca`.
 - Live smoke checks passed for `/`, `/solutions/ai-automation`, `/robots.txt` and `/sitemap.xml` with HTTP 200 responses.
 
+## Homepage boot screen - v0.3.0 - 2026-09-21
+
+- Production build, ESLint, TypeScript, scoped Prettier and SEO checks passed.
+- Chrome checks confirmed display for four seconds on repeated homepage loads, the synchronized 1.5-second progress-bar and canvas point pulse, no loader on internal routes or logo navigation, automatic dismissal after load, and reduced-motion disabling of the animation. The optimized implementation uses one canvas instead of 1,215 animated DOM nodes.
+- The release tests were aligned with the current publication policy: five published English articles remain public, five review articles remain excluded, and existing French routes are no longer treated as pending.
+
 ## Firebase deployment - v0.2.2 - 2026-09-21
 
 - Production build passed with `SITE_PUBLISHED=true`; SEO checks passed for 19 strategic routes.

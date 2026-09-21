@@ -17,7 +17,7 @@ test('publication policy excludes staging and review routes from the sitemap', (
 test('English SEO is complete in server HTML and social images resolve', async ({ request }) => {
   const titles = new Set<string>();
   const descriptions = new Set<string>();
-  for (const path of [...publicPaths, ...englishOnlyPaths, ...insightPaths(false)]) {
+  for (const path of [...publicPaths, ...englishOnlyPaths, ...insightPaths(published)]) {
     const response = await request.get(path, {
       headers: { 'user-agent': 'facebookexternalhit/1.1' },
     });

@@ -153,3 +153,7 @@ The English “Made for the real world” section now presents its three questio
 The card grid now keeps all question bodies aligned with equal-height rows, uses two columns at intermediate widths, and switches to one column on mobile. The first AI & Automation visual was replaced with a more mechanical glass-and-hologram concept with restrained mint spheres.
 
 The card media and copy now have explicit width and zero-width constraints, with stretched alignment, so the first card cannot shrink or push its text outside the card at medium widths. The homepage override also neutralizes the legacy first-item grid rule between 750px and 850px.
+
+## Reversible boot screen prototype - 2026-09-21
+
+The site now includes a lightweight boot screen using the existing SynapsAi SVG logo. On every full load of the homepage it remains visible for four seconds, then dismisses when ready, with a 4.6-second safety limit. Internal routes and logo navigation remain immediate. A CSS dot grid is available from the first paint; one canvas layer amplifies those same points in concentric timing from the logo and loading bar toward the edges, synchronized with the progress bar on a 1.5-second beat. This avoids a large animated DOM, creates a subtle pseudo-3D energy wave and adds no media or network request. The effect respects reduced-motion preferences. This shared English/French UI behavior is approved for the v0.3.0 release.

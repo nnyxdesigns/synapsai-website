@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { resolveRoute } from '@/lib/site';
 import { site, published } from '@/lib/site';
+import { PageLoader } from '@/components/page-loader';
 import '../globals.css';
 import '../insights.css';
 import '../ecosystem.css';
@@ -27,10 +28,13 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Promise<{ slug?: string[] }>;
 }) {
-  const { locale } = resolveRoute((await params).slug);
+  const { locale, path } = resolveRoute((await params).slug);
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      <body>
+        {path === '/' && <PageLoader />}
+        {children}
+      </body>
     </html>
   );
 }

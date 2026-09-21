@@ -19,7 +19,7 @@ const priority = [
 ];
 test('all English V1 routes have coherent metadata and internal destinations', async ({ page }) => {
   const titles = new Set<string>();
-  const allowed = [...publicPaths, ...englishOnlyPaths, ...insightPaths(false)];
+  const allowed = [...publicPaths, ...englishOnlyPaths, ...insightPaths(published)];
   for (const path of [...publicPaths, ...englishOnlyPaths]) {
     expect((await page.goto(path))?.status(), path).toBe(200);
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
@@ -93,8 +93,7 @@ test('ImaginAi Study Tools changes visual by hover, click, touch and keyboard', 
         .locator('img.is-active')
         .evaluate(
           (image) =>
-            (image as HTMLImageElement).complete &&
-            (image as HTMLImageElement).naturalWidth > 0,
+            (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0,
         ),
     )
     .toBe(true);
@@ -127,7 +126,7 @@ test('validated social and team links; pending routes remain unavailable', async
     await expect(link).toHaveAttribute('href', social.url);
     await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
   }
-  for (const path of ['/privacy', '/terms', '/fr/products/imaginai-prof', '/fr/company/impact'])
+  for (const path of ['/privacy', '/terms', '/fr/products/imaginai-prof'])
     expect((await request.get(path)).status()).toBe(404);
   const sitemap = await (await request.get('/sitemap.xml')).text();
   for (const path of englishOnlyPaths) {

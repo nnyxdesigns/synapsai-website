@@ -1,4 +1,88 @@
 /* Owner-approved SynapsAi brand and real product media. */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #050708;
+  color: var(--ink);
+  opacity: 1;
+  transition: opacity 240ms ease;
+}
+.page-loader-grid {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.62;
+  overflow: hidden;
+  background-image: radial-gradient(circle, #5effd980 1.15px, transparent 1.6px);
+  background-position: center;
+  background-size: 26px 26px;
+  mask-image: radial-gradient(
+    ellipse at center,
+    transparent 0 76px,
+    #000 122px,
+    #000 65%,
+    transparent 100%
+  );
+}
+.page-loader-core {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 19px;
+  width: min(82vw, 320px);
+}
+.page-loader-core img {
+  width: 135px;
+  height: auto;
+}
+.page-loader-signal {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+  background: #5effd933;
+}
+.page-loader-signal span {
+  position: absolute;
+  top: 0;
+  left: -22%;
+  width: 22%;
+  height: 1px;
+  background: var(--accent);
+  box-shadow: 0 0 14px var(--accent);
+  animation: page-loader-scan 1.5s ease-in-out infinite;
+}
+.page-loader-label {
+  color: #8aa69c;
+  font:
+    10px/1.2 Consolas,
+    monospace;
+  letter-spacing: 2px;
+}
+@keyframes page-loader-scan {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(555%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-loader {
+    animation: none;
+    transition: none;
+  }
+  .page-loader-signal span {
+    animation: none;
+    left: 39%;
+  }
+}
 .product-screen {
   margin: 0;
   min-width: 0;

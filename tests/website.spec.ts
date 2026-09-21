@@ -175,6 +175,48 @@ test('English homepage uses alternating surfaces and real product proof', async 
       .toBe(true);
   }
 });
+test('boot loader appears only on full homepage loads', async ({ page }) => {
+  await page.addInitScript(() => {
+    const state = window as typeof window & {
+      __loaderSeenAt?: number;
+      __loaderDuration?: number;
+    };
+    const probe = window.setInterval(() => {
+      const loader = document.querySelector('.page-loader');
+      if (loader && state.__loaderSeenAt === undefined) state.__loaderSeenAt = performance.now();
+      if (!loader && state.__loaderSeenAt !== undefined) {
+        state.__loaderDuration = performance.now() - state.__loaderSeenAt;
+        window.clearInterval(probe);
+      }
+    }, 10);
+  });
+  await page.goto('/', { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('.page-loader')).toBeVisible();
+  await expect(page.locator('canvas.page-loader-grid')).toHaveCount(1);
+  await expect(page.locator('.page-loader-dot')).toHaveCount(0);
+  await expect(page.locator('.page-loader-wave')).toHaveCount(0);
+  await expect(page.locator('.page-loader')).toHaveCount(0, { timeout: 5500 });
+  const duration = await page.evaluate(
+    () =>
+      (
+        window as typeof window & {
+          __loaderDuration?: number;
+        }
+      ).__loaderDuration || 0,
+  );
+  expect(duration).toBeGreaterThanOrEqual(3900);
+  expect(duration).toBeLessThanOrEqual(5000);
+
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  await expect(page.locator('.page-loader')).toBeVisible();
+  await expect(page.locator('.page-loader')).toHaveCount(0, { timeout: 4500 });
+
+  await page.goto('/products');
+  await expect(page.locator('.page-loader')).toHaveCount(0);
+  await page.locator('a.brand').click();
+  await expect(page).toHaveURL('/');
+  await expect(page.locator('.page-loader')).toHaveCount(0);
+});
 test('contact validates input and prepares a real email without claiming delivery', async ({
   page,
 }) => {
