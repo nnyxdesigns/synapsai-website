@@ -1,6 +1,6 @@
 ﻿# Firebase Hosting
 
-**Live:** https://synapsai.co — v0.2.3 deployed 2026-09-21. The tablet-width card alignment fix is live on Hosting site `synpasaico`; public route checks passed after deployment.
+**Live:** https://synapsai.co — v0.3.0 deployed 2026-09-21. Firebase version `27733207b84d1b39`; live release `1789999584940000`. The synchronized homepage boot screen and its fixed four-second timing are live; public HTTP and Chrome checks passed after deployment.
 
 Production target verified on 2026-09-17:
 
@@ -61,7 +61,7 @@ Do not add a SPA rewrite to `/index.html`: real missing pages must return 404 an
 
 ## Architecture and limits
 
-- `output: 'export'` produces 38 pages in `out/`, including existing French pages and five approved English articles.
+- `output: 'export'` produces 48 pages in the production build, including existing French pages and five published English articles.
 - The catch-all root layout derives document language from route parameters at build time; no request proxy or server headers are required.
 - `global-not-found.tsx` exports the shared 404 with an English message and French home link.
 - Metadata routes are force-static. Sitemap, robots, social metadata and article publication dates are built into the output.
@@ -71,6 +71,9 @@ Do not add a SPA rewrite to `/index.html`: real missing pages must return 404 an
 - `www.synapsai.co` was not configured as a custom domain on this Hosting site at launch and presented a TLS hostname mismatch before deployment. Set it up as a redirect to `synapsai.co` with the domain owner/DNS provider; this migration does not claim to fix it.
 
 ## Rollback reference
+
+Current v0.3.0 version: `sites/synpasaico/versions/27733207b84d1b39`.
+Release: `sites/synpasaico/releases/1789999584940000`, 2026-09-21 14:06:24 UTC.
 
 Before replacement, live version: `sites/synpasaico/versions/c63c1b0e779be4bd`.
 Release: `sites/synpasaico/releases/1788254948844000`, 2026-09-01 09:29:08 UTC.

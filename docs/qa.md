@@ -236,6 +236,8 @@ The interactive Study Tools pass added four generated concept mockups and a clie
 - Production build, ESLint, TypeScript, scoped Prettier and SEO checks passed.
 - Chrome checks confirmed display for four seconds on repeated homepage loads, the synchronized 1.5-second progress-bar and canvas point pulse, no loader on internal routes or logo navigation, automatic dismissal after load, and reduced-motion disabling of the animation. The optimized implementation uses one canvas instead of 1,215 animated DOM nodes.
 - The release tests were aligned with the current publication policy: five published English articles remain public, five review articles remain excluded, and existing French routes are no longer treated as pending.
+- Firebase Hosting site `synpasaico` in project `imaginai-f4fca` released version `27733207b84d1b39` at `1789999584940000`.
+- The live Chrome timing scenario passed on `https://synapsai.co`; HTTP smoke checks passed for Home, ImaginAi, Insights, the first published article, robots and sitemap. A review article returned the expected 404.
 
 ## Firebase deployment - v0.2.2 - 2026-09-21
 
