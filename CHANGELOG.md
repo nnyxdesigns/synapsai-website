@@ -2,6 +2,24 @@
 
 All notable changes to the SynapsAi website are documented here.
 
+## 2026-09-27 — Press and SEO follow-up
+
+### Added
+
+- The ninth owner-supplied YouTube Press video, “AI at the service of students: ImaginAi on CRTV News | Cameroun Daylight”, with its verified publication date and local WebP thumbnail.
+- An `ItemList` of `VideoObject` entries on the Insights index, connecting each Press video to its thumbnail, YouTube embed URL, upload date and SynapsAi publisher entity for clearer search discovery.
+
+### Changed
+
+- Updated Press browser coverage from eight to nine verified videos.
+- Recorded the thumbnail provenance, implementation notes and Firebase release identifiers.
+
+### Verification and deployment
+
+- `npm run check:seo`, TypeScript, production build and the 19 targeted Insights/SEO Playwright tests passed.
+- Firebase Hosting version `92bc639b6b4eb3f5` was released as `1790542103243000` on site `synpasaico`.
+- Git commit `e9f5650` was pushed to `origin/nextjs-local-baseline`.
+
 ## [0.3.0] - 2026-09-21
 
 ### Added
