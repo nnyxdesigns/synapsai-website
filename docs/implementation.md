@@ -70,11 +70,15 @@ No production deployment is part of this implementation.
 
 Buttons use mint backgrounds and dark text, with 8px less total vertical padding. Footer social links display icons only, retaining accessible names. Four owner-supplied compositions were matched against official imaginai.io assets and compressed as WebP in public/media/products; no product UI was altered. English product layouts use these images; shared Archivo, button dimensions and brand tokens also affect existing French pages, without a French content adaptation.
 
-The English Insights index now has category tabs, search, a compact editorial layout and a Press section inspired by Linear Now. A small client component controls server-rendered card slots; article bodies remain server-side. Tabs support arrows, Home/End and roving focus. Press entries live in src/lib/press.ts and remain empty until the owner supplies verified YouTube links; there are no fabricated videos or embeds.
+The English Insights index now has category tabs, search, a compact editorial layout and a Press section inspired by Linear Now. A small client component controls server-rendered card slots; article bodies remain server-side. Tabs support arrows, Home/End and roving focus. Press entries live in src/lib/press.ts; there are no fabricated videos or embeds.
 
 ## 2026-09-16 ? Three-column Insights and populated Press
 
 The owner approved retaining the featured article, showing following articles in three desktop columns, and matching Linear Now Press with thumbnail cards in four desktop columns. All previews four videos and View all selects Press with all eight supplied videos. Tablet uses two columns and mobile one. Video titles, channel and thumbnails were verified through YouTube oEmbed; original publication dates came from the public watch-page metadata. English display titles adapt the originals, retained in the registry for search and provenance. Local thumbnail assets avoid third-party requests until a visitor follows a video link. No video iframe or autoplay is loaded.
+
+## 2026-09-27 — Additional Press video
+
+A ninth owner-supplied YouTube video was added to the English Press registry with verified oEmbed title, watch-page publication date and a local WebP thumbnail. The media provenance manifest records the official thumbnail source.
 
 ## 2026-09-16 ? SEO and supplied brand assets
 

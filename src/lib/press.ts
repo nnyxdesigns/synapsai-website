@@ -12,6 +12,17 @@ export type PressEntry = {
 // Owner-provided videos. Titles and dates verified against YouTube; English display titles adapted from originals.
 export const pressEntries: PressEntry[] = [
   {
+    id: 'g_FsExH219U',
+    title: 'AI at the service of students: ImaginAi on CRTV News | Cameroun Daylight',
+    originalTitle:
+      'L’intelligence artificielle au service des élèves : ImaginAi sur CRTV News | Cameroun Daylight',
+    url: 'https://www.youtube.com/watch?v=g_FsExH219U',
+    publisher: 'YouTube',
+    publishedAt: '2026-09-27',
+    format: 'Video',
+    thumbnail: '/media/press/g_FsExH219U.webp',
+  },
+  {
     id: 'Ms-mvda5R0I',
     title: 'SAGO 2026: Discover ImaginAi, the Edtech app innovating with AI | CRTV News',
     originalTitle:

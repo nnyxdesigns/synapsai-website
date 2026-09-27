@@ -268,7 +268,7 @@ test('Insights categories, search and Press work with keyboard and on mobile', a
     const press = page.getByRole('tab', { name: 'Press', exact: true });
     await expect(press).toBeFocused();
     await expect(press).toHaveAttribute('aria-selected', 'true');
-    await expect(page.locator('.press-link')).toHaveCount(8);
+    await expect(page.locator('.press-link')).toHaveCount(9);
     await expect(page.locator('.insight-card')).toHaveCount(0);
     expect(
       (await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze())
@@ -289,7 +289,7 @@ test('Insights categories, search and Press work with keyboard and on mobile', a
   }
 });
 
-test('three article columns and four Press columns link to all eight verified videos', async ({
+test('three article columns and four Press columns link to all nine verified videos', async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
@@ -311,7 +311,7 @@ test('three article columns and four Press columns link to all eight verified vi
     'aria-selected',
     'true',
   );
-  await expect(page.locator('.press-link')).toHaveCount(8);
+  await expect(page.locator('.press-link')).toHaveCount(9);
   for (const entry of pressEntries) {
     const card = page.locator('.press-link').filter({ hasText: entry.title });
     await expect(card).toHaveAttribute('href', entry.url);

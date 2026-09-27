@@ -1,6 +1,6 @@
 ﻿# Firebase Hosting
 
-**Live:** https://synapsai.co — v0.3.0 deployed 2026-09-21. Firebase version `27733207b84d1b39`; live release `1789999584940000`. The synchronized homepage boot screen and its fixed four-second timing are live; public HTTP and Chrome checks passed after deployment.
+**Live:** https://synapsai.co — v0.3.0 deployed 2026-09-27. Firebase version `92bc639b6b4eb3f5`; live release `1790542103243000`. This release adds the ninth Press video, local thumbnail provenance and Insights VideoObject structured data. Public HTTP and targeted Chrome checks passed before deployment.
 
 Production target verified on 2026-09-17:
 

@@ -16,6 +16,7 @@ import { InsightArticle, InsightsIndex } from '@/components/insights';
 import { englishOnlyPaths } from '@/lib/ecosystem';
 import { socialProfiles } from '@/lib/company';
 import { withSeo, breadcrumbData } from '@/lib/seo';
+import { pressEntries } from '@/lib/press';
 export const dynamicParams = false;
 export function generateStaticParams() {
   const paths = [
@@ -185,6 +186,34 @@ export default async function Page({ params }: Props) {
                 locale,
               ),
             ).replace(/</g, '\\u003c'),
+          }}
+        />
+      )}
+      {path === '/insights' && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'ItemList',
+              name: locale === 'fr' ? 'Vidéos de presse SynapsAi' : 'SynapsAi press videos',
+              itemListElement: pressEntries.map((video, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                item: {
+                  '@type': 'VideoObject',
+                  name: locale === 'fr' ? video.originalTitle : video.title,
+                  description:
+                    locale === 'fr'
+                      ? `Vidéo de presse SynapsAi publiée sur YouTube le ${video.publishedAt}.`
+                      : `SynapsAi press video published on YouTube on ${video.publishedAt}.`,
+                  uploadDate: video.publishedAt,
+                  thumbnailUrl: `${site.url}${video.thumbnail}`,
+                  embedUrl: `https://www.youtube.com/embed/${video.id}`,
+                  publisher: { '@id': `${site.url}/#organization` },
+                },
+              })),
+            }).replace(/</g, '\\u003c'),
           }}
         />
       )}

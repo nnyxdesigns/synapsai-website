@@ -226,6 +226,14 @@
       "use": "YouTube video supplied by owner; local WebP thumbnail for Press."
     },
     {
+      "file": "press/g_FsExH219U.webp",
+      "source": "https://i.ytimg.com/vi/g_FsExH219U/hqdefault.jpg",
+      "reviewedAt": "2026-09-27",
+      "kind": "official-video-thumbnail",
+      "status": "owner-approved",
+      "use": "YouTube video supplied by owner; local WebP thumbnail for Press."
+    },
+    {
       "file": "brand/synapsai-logo.svg",
       "source": "Logo SynapsAi vert + blanc.svg",
       "kind": "owner-supplied-brand",

@@ -52,11 +52,15 @@ Run build, lint, typecheck and the English suites `tests/insights.spec.ts` and `
 
 ## Category browsing and Press
 
-The English index provides All, five editorial categories and Press tabs, plus title/topic search. Filtering supports keyboard arrows, Home/End and an announced result count. Press is a separate typed registry in src/lib/press.ts for verified external videos, interviews and articles; it is empty pending owner links. Add the exact URL, title, publisher, format and original publication date after verification. No YouTube iframe or remote tracking is loaded on the index.
+The English index provides All, five editorial categories and Press tabs, plus title/topic search. Filtering supports keyboard arrows, Home/End and an announced result count. Press is a separate typed registry in src/lib/press.ts for verified external videos, interviews and articles. Add the exact URL, title, publisher, format and original publication date after verification. No YouTube iframe or remote tracking is loaded on the index.
 
 ## 2026-09-16 ? Three-column Insights and populated Press
 
 The owner approved retaining the featured article, showing following articles in three desktop columns, and matching Linear Now Press with thumbnail cards in four desktop columns. All previews four videos and View all selects Press with all eight supplied videos. Tablet uses two columns and mobile one. Video titles, channel and thumbnails were verified through YouTube oEmbed; original publication dates came from the public watch-page metadata. English display titles adapt the originals, retained in the registry for search and provenance. Local thumbnail assets avoid third-party requests until a visitor follows a video link. No video iframe or autoplay is loaded.
+
+## 2026-09-27 — Additional Press video
+
+The owner supplied a ninth YouTube video, “AI at the service of students: ImaginAi on CRTV News | Cameroun Daylight”. Its oEmbed title, watch-page publication date and official thumbnail were verified and added to the English Press registry. The local thumbnail is recorded in the media manifest; no French content change was made.
 
 ## Owner approval ? first five English Insights
 
