@@ -83,6 +83,27 @@
     "image": "work-imaginai",
     "intent": "ImaginAi ecosystem design and engineering case study"
   },
+  "/work/decolab": {
+    "title": "DecoLab: making interior ideas tangible.",
+    "description": "A visual 3D studio designed and built by SynapsAi to help people imagine and compose interior spaces.",
+    "headline": "Turn an empty room into a place to imagine.",
+    "image": "work-decolab",
+    "intent": "DecoLab product design and 3D experience case study"
+  },
+  "/work/moto-fleet": {
+    "title": "Moto Fleet: a clearer operating system for every ride.",
+    "description": "A secure fleet operations platform designed and built by SynapsAi for motorcycles, drivers, assignments and payments.",
+    "headline": "A clearer operating system for every ride.",
+    "image": "work-moto-fleet",
+    "intent": "Moto Fleet operations platform case study"
+  },
+  "/work/petlife237": {
+    "title": "PetLife237: a calmer way to care for companions.",
+    "description": "A private, mobile-first companion journal designed and built by SynapsAi for everyday pet care.",
+    "headline": "Make care easier to remember.",
+    "image": "work-petlife237",
+    "intent": "PetLife237 consumer product case study"
+  },
   "/company": {
     "title": "Company — Meet SynapsAi",
     "description": "Meet SynapsAi, the technology company behind ImaginAi, and explore our story, team, solutions and documented milestones.",

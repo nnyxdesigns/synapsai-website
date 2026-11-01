@@ -66,6 +66,10 @@ The selected direction uses the reference near-black canvas (#010102), charcoal 
 
 No production deployment is part of this implementation.
 
+## 2026-11-01 — Portfolio case studies
+
+The English Work portfolio now presents four selected projects: ImaginAi, DecoLab, Moto Fleet and PetLife237. Three English-only case-study routes were added under `/work/decolab`, `/work/moto-fleet` and `/work/petlife237`. Each uses a short challenge/solution narrative, capability tags, a live-product link and responsive desktop/mobile product captures. The captures were taken from the public project URLs supplied by the owner and recorded in `public/media/manifest.json`; they are not generated product imagery. No performance, client or business-result claims were added.
+
 ## Brand and Insights browsing revision
 
 Buttons use mint backgrounds and dark text, with 8px less total vertical padding. Footer social links display icons only, retaining accessible names. Four owner-supplied compositions were matched against official imaginai.io assets and compressed as WebP in public/media/products; no product UI was altered. English product layouts use these images; shared Archivo, button dimensions and brand tokens also affect existing French pages, without a French content adaptation.

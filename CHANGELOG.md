@@ -2,6 +2,20 @@
 
 All notable changes to the SynapsAi website are documented here.
 
+## 2026-11-01 — Portfolio case studies
+
+### Added
+
+- Added a visual English Work portfolio covering ImaginAi, DecoLab, Moto Fleet and PetLife237.
+- Added dedicated case-study routes for `/work/decolab`, `/work/moto-fleet` and `/work/petlife237`, with concise challenge/solution storytelling, capability tags and links to the live products.
+- Added responsive desktop and mobile captures from the three public products under `public/media/work/portfolio/`.
+- Added route-specific SEO metadata, social images and media provenance records.
+
+### Verification and release
+
+- ESLint, TypeScript and SEO checks passed for the portfolio update.
+- Production deployment target remains Firebase Hosting site `synpasaico` in project `imaginai-f4fca`.
+
 ## 2026-09-27 — Press and SEO follow-up
 
 ### Added

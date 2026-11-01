@@ -40,6 +40,14 @@ Dark desktop home, French mobile home, mobile contact and both team layouts were
 
 Future checks focus on English, per the owner's latest instruction. Dedicated French verification resumes when the English iteration is approved for French adaptation.
 
+## Portfolio case studies — 2026-11-01
+
+- `npm run lint`: passed.
+- `npm run typecheck`: passed.
+- `npm run check:seo`: passed for 22 strategic routes, including the three new case studies and social images.
+- `npm run build`: compiled successfully, but Next.js export stopped at the environment's `spawn EPERM` process-permission error during its TypeScript worker step; rerun in the normal local shell/CI environment before deployment.
+- New English-only portfolio routes use owner-supplied public project URLs and local responsive screenshots. French equivalents were intentionally not created.
+
 ## English Insights iteration
 
 - Production build, TypeScript and ESLint: passed for the new Insights implementation.

@@ -817,6 +817,78 @@
       "status": "local-review",
       "use": "English homepage Made for the real world card; conceptual iteration visual, not a delivery or outcome claim",
       "prompt": "Premium cinematic 3D concept art of a luminous structure continuing beyond a launch point with connected markers suggesting iteration and long-term care, near-black technical landscape, charcoal and muted graphite with sparse SynapsAi mint accents, no people, logos, text or UI."
+    },
+    {
+      "file": "work/portfolio/decolab-desktop.png",
+      "source": "https://decolab-studio.web.app/",
+      "reviewedAt": "2026-11-01",
+      "kind": "official-public-project-screenshot",
+      "status": "local-review",
+      "use": "Portfolio case study visual captured from the public DecoLab product"
+    },
+    {
+      "file": "work/portfolio/decolab-mobile.png",
+      "source": "https://decolab-studio.web.app/",
+      "reviewedAt": "2026-11-01",
+      "kind": "official-public-project-screenshot",
+      "status": "local-review",
+      "use": "Responsive portfolio case study visual captured from the public DecoLab product"
+    },
+    {
+      "file": "work/portfolio/moto-fleet-desktop.png",
+      "source": "https://synapsaico.web.app/",
+      "reviewedAt": "2026-11-01",
+      "kind": "official-public-project-screenshot",
+      "status": "local-review",
+      "use": "Portfolio case study visual captured from the public Moto Fleet product"
+    },
+    {
+      "file": "work/portfolio/moto-fleet-mobile.png",
+      "source": "https://synapsaico.web.app/",
+      "reviewedAt": "2026-11-01",
+      "kind": "official-public-project-screenshot",
+      "status": "local-review",
+      "use": "Responsive portfolio case study visual captured from the public Moto Fleet product"
+    },
+    {
+      "file": "work/portfolio/petlife237-desktop.png",
+      "source": "https://petlife237.web.app/",
+      "reviewedAt": "2026-11-01",
+      "kind": "official-public-project-screenshot",
+      "status": "local-review",
+      "use": "Portfolio case study visual captured from the public PetLife237 product"
+    },
+    {
+      "file": "work/portfolio/petlife237-mobile.png",
+      "source": "https://petlife237.web.app/",
+      "reviewedAt": "2026-11-01",
+      "kind": "official-public-project-screenshot",
+      "status": "local-review",
+      "use": "Responsive portfolio case study visual captured from the public PetLife237 product"
+    },
+    {
+      "file": "og/work-decolab.png",
+      "source": "Existing SynapsAi portfolio social image adapted for the DecoLab route",
+      "reviewedAt": "2026-11-01",
+      "kind": "social-sharing-image",
+      "status": "local-review",
+      "use": "Open Graph image for the English DecoLab case study"
+    },
+    {
+      "file": "og/work-moto-fleet.png",
+      "source": "Existing SynapsAi portfolio social image adapted for the Moto Fleet route",
+      "reviewedAt": "2026-11-01",
+      "kind": "social-sharing-image",
+      "status": "local-review",
+      "use": "Open Graph image for the English Moto Fleet case study"
+    },
+    {
+      "file": "og/work-petlife237.png",
+      "source": "Existing SynapsAi portfolio social image adapted for the PetLife237 route",
+      "reviewedAt": "2026-11-01",
+      "kind": "social-sharing-image",
+      "status": "local-review",
+      "use": "Open Graph image for the English PetLife237 case study"
     }
   ]
 }

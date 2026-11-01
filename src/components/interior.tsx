@@ -24,6 +24,8 @@ import {
   CompanyOverview,
 } from './ecosystem';
 import { englishPageMeta } from '@/lib/ecosystem';
+import { getWorkProject } from '@/lib/work';
+import { WorkCaseStudy, WorkPortfolioIndex } from './work-portfolio';
 const titles: Record<string, { en: string; fr: string }> = {
   '/solutions': {
     en: 'Technology shaped around your next move.',
@@ -39,6 +41,9 @@ const titles: Record<string, { en: string; fr: string }> = {
     en: 'ImaginAi. From an idea to a learning ecosystem.',
     fr: 'ImaginAi. D’une idée à un écosystème éducatif.',
   },
+  '/work/decolab': { en: 'DecoLab. Making interior ideas tangible.', fr: 'DecoLab.' },
+  '/work/moto-fleet': { en: 'Moto Fleet. A clearer operating system for every ride.', fr: 'Moto Fleet.' },
+  '/work/petlife237': { en: 'PetLife237. A calmer way to care for companions.', fr: 'PetLife237.' },
   '/company': {
     en: 'Product minds. Engineering hands.',
     fr: 'L’esprit produit. Le savoir-faire technique.',
@@ -158,6 +163,8 @@ export function Interior({ locale, path }: { locale: Locale; path: string }) {
     if (path === '/products/imaginai') return <ProductDetail />;
     if (path === '/products/imaginai-prof') return <ProductDetail prof />;
     if (path === '/work/imaginai') return <EcosystemCaseStudy />;
+    if (path.startsWith('/work/') && getWorkProject(path.slice('/work/'.length)))
+      return <WorkCaseStudy project={getWorkProject(path.slice('/work/'.length))!} />;
     if (path === '/company/impact') return <ImpactPage />;
   }
   if (path === '/company/impact') return <ImpactPage locale={locale} />;
@@ -294,6 +301,7 @@ export function Interior({ locale, path }: { locale: Locale; path: string }) {
       </>
     );
   }
+  if (path === '/work' && !fr) return <WorkPortfolioIndex />;
   if (path === '/products' || path === '/work')
     return (
       <>

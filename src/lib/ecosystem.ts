@@ -1,4 +1,9 @@
-export const englishOnlyPaths = ['/products/imaginai-prof'];
+export const englishOnlyPaths = [
+  '/products/imaginai-prof',
+  '/work/decolab',
+  '/work/moto-fleet',
+  '/work/petlife237',
+];
 export const products = [
   {
     name: 'ImaginAi',
@@ -61,6 +66,18 @@ export const englishPageMeta: Record<string, { title: string; description: strin
     title: 'ImaginAi: engineering a connected education ecosystem.',
     description:
       'How SynapsAi brings learner mobile experiences and instructor web workflows together around three education stakeholder needs.',
+  },
+  '/work/decolab': {
+    title: 'DecoLab: making interior ideas tangible.',
+    description: 'A visual 3D studio designed and built by SynapsAi to help people imagine and compose interior spaces.',
+  },
+  '/work/moto-fleet': {
+    title: 'Moto Fleet: a clearer operating system for every ride.',
+    description: 'A secure fleet operations platform designed and built by SynapsAi for motorcycles, drivers, assignments and payments.',
+  },
+  '/work/petlife237': {
+    title: 'PetLife237: a calmer way to care for companions.',
+    description: 'A private, mobile-first companion journal designed and built by SynapsAi for everyday pet care.',
   },
   '/company/impact': {
     title: 'Built, used and recognized.',
