@@ -15,6 +15,7 @@ All notable changes to the SynapsAi website are documented here.
 
 - ESLint, TypeScript and SEO checks passed for the portfolio update.
 - Production deployment target remains Firebase Hosting site `synpasaico` in project `imaginai-f4fca`.
+- Firebase Hosting version `1206b8aa18d951c8` was released live as `1793570570243000` on `synpasaico`.
 
 ## 2026-09-27 — Press and SEO follow-up
 

@@ -1,6 +1,6 @@
 ﻿# Firebase Hosting
 
-**Live:** https://synapsai.co — v0.3.0 deployed 2026-09-27. Firebase version `92bc639b6b4eb3f5`; live release `1790542103243000`. This release adds the ninth Press video, local thumbnail provenance and Insights VideoObject structured data. Public HTTP and targeted Chrome checks passed before deployment.
+**Live:** https://synapsai.co — portfolio case studies release deployed 2026-11-01. Firebase version `1206b8aa18d951c8`; live release `1793570570243000`. This release adds the English DecoLab, Moto Fleet and PetLife237 case studies with responsive product captures and documented media provenance.
 
 Production target verified on 2026-09-17:
 
